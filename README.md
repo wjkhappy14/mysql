@@ -1,2 +1,2 @@
 # mysql-debug
-debug mysql for research
+debug mysql for researching
