@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\gcs_plugin_messages.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\member_info.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\member_version.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\compatibility_module.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_logging.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\xplatform\my_xp_cond.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\xplatform\my_xp_thread.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\xplatform\my_xp_mutex.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\xplatform\my_xp_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_view.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_types.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_message.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_member_identifier.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_group_identifier.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DBC9E969-B080-3702-8F2F-24E894CA22A5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

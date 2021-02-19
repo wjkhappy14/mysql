@@ -1,0 +1,569 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_plugin.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_performance_schema.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_log.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\io\xpl_listener_tcp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\io\xpl_listener_unix_socket.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_server.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_session.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_client.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_dispatcher.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_system_variables.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_regex.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\io\xpl_listener_factory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysql_variables.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysql_function_names.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysql_show_variable_wrapper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\auth_mysql41.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\admin_cmd_handler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\query_formatter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\query_string_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\expr_generator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\crud_cmd_handler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\buffering_command_delegate.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\callback_command_delegate.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\streaming_command_delegate.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\sql_data_context.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\sql_data_result.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\sql_user_require.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\json_utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\expect.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\statement_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\update_statement_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\find_statement_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\delete_statement_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\view_statement_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\insert_statement_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\notices.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\ngs_common\connection_type.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\ngs_common\connection_vio.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\ngs_common\operations_factory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\ngs_common\options_ssl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\capabilities\configurator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\capabilities\handler_auth_mech.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\capabilities\handler_tls.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\client.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\client_list.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\client_session.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol\buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol\message_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol\metadata_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol\notice_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol\output_buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol\page_pool.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol\row_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol_authentication.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol_decoder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol_encoder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\scheduler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\server.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\server_acceptors.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\server_client_timeout.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\socket_events.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\thread.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_datatypes.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_connection.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expect.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expr.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_crud.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_sql.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_session.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_notice.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_resultset.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\io\xpl_listener_tcp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\io\xpl_listener_unix_socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_dispatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_system_variables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_common_status_variables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_global_status_variables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_session_status_variables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_regex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\auth_plain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\auth_mysql41.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\admin_cmd_handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\query_string_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\expr_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\crud_cmd_handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\buffering_command_delegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\callback_command_delegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\command_delegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\streaming_command_delegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\sql_data_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\sql_data_result.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\sql_user_require.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\json_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\expect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\statement_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\update_statement_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\find_statement_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\insert_statement_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\delete_statement_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\view_statement_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\notices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\cap_handles_expired_passwords.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysql_function_names.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\capabilities\configurator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\capabilities\handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\capabilities\handler_auth_mech.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\capabilities\handler_readonly_value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\capabilities\handler_tls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\client_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\client_session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\error_code.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\ngs_error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\message_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\metadata_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\notice_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\output_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\page_pool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\protocol_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\row_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol_authentication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol_decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol_encoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol_fwd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol_monitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\server_acceptors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\server_client_timeout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\socket_events.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\socket_events_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\atomic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\bind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\chrono.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\connection_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\connection_vio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\file_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\operations_factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\operations_factory_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\options_ssl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\protocol_const.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\protocol_protobuf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\smart_ptr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\socket_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\string_formatter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\system_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\to_string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\xdatetime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\xdecimal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_datatypes.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_connection.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expect.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expr.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_crud.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_sql.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_session.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_notice.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_resultset.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_datatypes.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_connection.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_expect.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_expr.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_crud.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_sql.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_session.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_notice.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_resultset.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="E:\mysql\win\versioninfo_dll.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{02E1C3A9-D35B-39DD-A407-43464815AC39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{57064165-2846-3BB7-AA45-31F28D087BA2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DBC9E969-B080-3702-8F2F-24E894CA22A5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

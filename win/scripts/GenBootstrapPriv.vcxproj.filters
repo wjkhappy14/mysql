@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\62e482cb5b81db08a0cc7ab81a2dc6ea\sql_commands_system_data.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\62e482cb5b81db08a0cc7ab81a2dc6ea\sql_commands_system_tables.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\62e482cb5b81db08a0cc7ab81a2dc6ea\sql_commands_help_data.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\bededba97cba22a8b7634fe210759705\GenBootstrapPriv.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\mysql-5.7.33\scripts\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\mysql\win\scripts\CMakeFiles\GenBootstrapPriv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{02E1C3A9-D35B-39DD-A407-43464815AC39}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

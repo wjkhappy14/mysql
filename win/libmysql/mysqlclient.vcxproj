@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D150B1EC-64DA-3A08-AE70-31FE9E60E09F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>mysqlclient</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\archive_output_directory\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mysqlclient.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mysqlclient</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\archive_output_directory\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mysqlclient.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mysqlclient</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\archive_output_directory\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mysqlclient.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mysqlclient</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\archive_output_directory\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mysqlclient.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mysqlclient</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\libmysql;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\strings;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ENABLED_DEBUG_SYNC;SAFE_MUTEX;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;CLIENT_PROTOCOL_TRACING;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;AUTHENTICATION_WIN;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ENABLED_DEBUG_SYNC;SAFE_MUTEX;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;CLIENT_PROTOCOL_TRACING;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;AUTHENTICATION_WIN;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\libmysql;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\strings;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\libmysql;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\strings;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Merging library mysqlclient</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DTARGET_NAME=mysqlclient -DTARGET_LOC=E:/mysql/win/archive_output_directory/Debug/mysqlclient.lib -DCFG_INTDIR=$(Configuration) -P E:/mysql/win/archive_output_directory/lib_merge_mysqlclient.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\libmysql;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\strings;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;CLIENT_PROTOCOL_TRACING;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;AUTHENTICATION_WIN;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;CLIENT_PROTOCOL_TRACING;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;AUTHENTICATION_WIN;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\libmysql;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\strings;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\libmysql;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\strings;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Merging library mysqlclient</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DTARGET_NAME=mysqlclient -DTARGET_LOC=E:/mysql/win/archive_output_directory/Release/mysqlclient.lib -DCFG_INTDIR=$(Configuration) -P E:/mysql/win/archive_output_directory/lib_merge_mysqlclient.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\libmysql;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\strings;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;CLIENT_PROTOCOL_TRACING;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;AUTHENTICATION_WIN;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;CLIENT_PROTOCOL_TRACING;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;AUTHENTICATION_WIN;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\libmysql;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\strings;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\libmysql;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\strings;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Merging library mysqlclient</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DTARGET_NAME=mysqlclient -DTARGET_LOC=E:/mysql/win/archive_output_directory/MinSizeRel/mysqlclient.lib -DCFG_INTDIR=$(Configuration) -P E:/mysql/win/archive_output_directory/lib_merge_mysqlclient.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\libmysql;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\strings;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;CLIENT_PROTOCOL_TRACING;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;AUTHENTICATION_WIN;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;CLIENT_PROTOCOL_TRACING;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;AUTHENTICATION_WIN;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\libmysql;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\strings;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\libmysql;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\strings;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Merging library mysqlclient</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DTARGET_NAME=mysqlclient -DTARGET_LOC=E:/mysql/win/archive_output_directory/RelWithDebInfo/mysqlclient.lib -DCFG_INTDIR=$(Configuration) -P E:/mysql/win/archive_output_directory/lib_merge_mysqlclient.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\7bb49fd10209547ee585b41cb271d22b\mysqlclient_depends.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../archive_output_directory/mysqlclient_depends.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/mysql/win/archive_output_directory/mysqlclient_depends.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\archive_output_directory\Debug\clientlib.lib;E:\mysql\win\archive_output_directory\Debug\dbug.lib;E:\mysql\win\archive_output_directory\Debug\strings.lib;E:\mysql\win\archive_output_directory\Debug\vio.lib;E:\mysql\win\archive_output_directory\Debug\mysys.lib;E:\mysql\win\archive_output_directory\Debug\mysys_ssl.lib;E:\mysql\win\archive_output_directory\Debug\zlib.lib;E:\mysql\win\archive_output_directory\Debug\auth_win_client.lib;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\archive_output_directory\mysqlclient_depends.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../archive_output_directory/mysqlclient_depends.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/mysql/win/archive_output_directory/mysqlclient_depends.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\archive_output_directory\Release\clientlib.lib;E:\mysql\win\archive_output_directory\Release\dbug.lib;E:\mysql\win\archive_output_directory\Release\strings.lib;E:\mysql\win\archive_output_directory\Release\vio.lib;E:\mysql\win\archive_output_directory\Release\mysys.lib;E:\mysql\win\archive_output_directory\Release\mysys_ssl.lib;E:\mysql\win\archive_output_directory\Release\zlib.lib;E:\mysql\win\archive_output_directory\Release\auth_win_client.lib;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\archive_output_directory\mysqlclient_depends.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ../archive_output_directory/mysqlclient_depends.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/mysql/win/archive_output_directory/mysqlclient_depends.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\archive_output_directory\MinSizeRel\clientlib.lib;E:\mysql\win\archive_output_directory\MinSizeRel\dbug.lib;E:\mysql\win\archive_output_directory\MinSizeRel\strings.lib;E:\mysql\win\archive_output_directory\MinSizeRel\vio.lib;E:\mysql\win\archive_output_directory\MinSizeRel\mysys.lib;E:\mysql\win\archive_output_directory\MinSizeRel\mysys_ssl.lib;E:\mysql\win\archive_output_directory\MinSizeRel\zlib.lib;E:\mysql\win\archive_output_directory\MinSizeRel\auth_win_client.lib;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\archive_output_directory\mysqlclient_depends.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../archive_output_directory/mysqlclient_depends.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/mysql/win/archive_output_directory/mysqlclient_depends.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\archive_output_directory\RelWithDebInfo\clientlib.lib;E:\mysql\win\archive_output_directory\RelWithDebInfo\dbug.lib;E:\mysql\win\archive_output_directory\RelWithDebInfo\strings.lib;E:\mysql\win\archive_output_directory\RelWithDebInfo\vio.lib;E:\mysql\win\archive_output_directory\RelWithDebInfo\mysys.lib;E:\mysql\win\archive_output_directory\RelWithDebInfo\mysys_ssl.lib;E:\mysql\win\archive_output_directory\RelWithDebInfo\zlib.lib;E:\mysql\win\archive_output_directory\RelWithDebInfo\auth_win_client.lib;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\archive_output_directory\mysqlclient_depends.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\mysql-5.7.33\libmysql\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/libmysql/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/libmysql/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\mysql-5.7.33\cmake\configurable_file_content.in;E:\mysql\mysql-5.7.33\cmake\merge_archives.cmake.in;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\libmysql\api_test.c.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\libmysql\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/libmysql/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/libmysql/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\mysql-5.7.33\cmake\configurable_file_content.in;E:\mysql\mysql-5.7.33\cmake\merge_archives.cmake.in;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\libmysql\api_test.c.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\libmysql\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/libmysql/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/libmysql/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\mysql-5.7.33\cmake\configurable_file_content.in;E:\mysql\mysql-5.7.33\cmake\merge_archives.cmake.in;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\libmysql\api_test.c.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\libmysql\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/libmysql/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/libmysql/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\mysql-5.7.33\cmake\configurable_file_content.in;E:\mysql\mysql-5.7.33\cmake\merge_archives.cmake.in;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\libmysql\api_test.c.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\libmysql\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\mysql\win\archive_output_directory\mysqlclient_depends.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\mysql\win\ZERO_CHECK.vcxproj">
+      <Project>{B584D885-F4E3-3C53-87CE-DB7650C6F37C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libmysql\authentication_win\auth_win_client.vcxproj">
+      <Project>{56031BEE-118D-3620-8A8F-056FDE88D436}</Project>
+      <Name>auth_win_client</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libmysql\clientlib.vcxproj">
+      <Project>{CE58D4C9-B201-3CAD-84D6-84CD83A9C0DA}</Project>
+      <Name>clientlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\dbug\dbug.vcxproj">
+      <Project>{2ED86B42-3F5D-36C7-8F8A-C180527B4582}</Project>
+      <Name>dbug</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\mysys_ssl\mysys_ssl.vcxproj">
+      <Project>{408604CE-0631-3C50-99E9-BB2BE0F05956}</Project>
+      <Name>mysys_ssl</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\strings\strings.vcxproj">
+      <Project>{EAA77626-0230-3057-8B78-4AA35C676FA1}</Project>
+      <Name>strings</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\vio\vio.vcxproj">
+      <Project>{06651924-7EDE-3C99-B5A4-5CC95C0A9A92}</Project>
+      <Name>vio</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\zlib\zlib.vcxproj">
+      <Project>{DBF2F168-6899-38B9-84E7-4811A2A78621}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\event_tagging.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\http.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\evdns.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\evrpc.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Extra">
+      <UniqueIdentifier>{35E0EB84-F2C2-38EB-BADC-32486BAE2EAD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

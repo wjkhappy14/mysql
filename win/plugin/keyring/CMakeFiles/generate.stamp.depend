@@ -1,0 +1,3 @@
+# CMake generation dependency list for this directory.
+E:/mysql/mysql-5.7.33/cmake/compile_flags.cmake
+E:/mysql/mysql-5.7.33/plugin/keyring/CMakeLists.txt

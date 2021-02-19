@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+E:/mysql/mysql-5.7.33/cmake/compile_flags.cmake
+E:/mysql/mysql-5.7.33/rapid/plugin/x/CMakeLists.txt
+E:/mysql/mysql-5.7.33/rapid/plugin/x/mysqlx_configure.cmake
+E:/mysql/mysql-5.7.33/rapid/plugin/x/mysqlx_protobuf.cmake
+E:/mysql/mysql-5.7.33/rapid/plugin/x/mysqlx_variables.cmake
+E:/mysql/mysql-5.7.33/rapid/plugin/x/source_files.cmake
+E:/mysql/mysql-5.7.33/rapid/plugin/x/src/mysqlx_ername.h.in
+E:/mysql/mysql-5.7.33/rapid/plugin/x/src/mysqlx_error.h.in
+E:/mysql/mysql-5.7.33/rapid/plugin/x/src/mysqlx_version.h.in

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_gtid_misc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_gtid_sid_map.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_gtid_set.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_gtid_specification.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_gtid_state.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_gtid_owned.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_gtid_execution.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_gtid_mutex_cond_array.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_gtid_persist.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\log_event.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\log_event_old.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\binlog.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_binlog.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_filter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_record.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_record_old.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_trx_tracking.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_utility.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_injector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_table_access.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\mysql-5.7.33\sql\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DBC9E969-B080-3702-8F2F-24E894CA22A5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

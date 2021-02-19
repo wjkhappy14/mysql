@@ -1,0 +1,19 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.19/Modules/CMakeConfigurableFile.in
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckTypeSize.c.in
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/TestBigEndian.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/TestEndianess.c.in
+E:/mysql/mysql-5.7.33/libbinlogevents/CMakeLists.txt
+E:/mysql/mysql-5.7.33/libbinlogevents/binlog_config.h.cmake
+E:/mysql/mysql-5.7.33/libbinlogevents/configure.cmake
+E:/mysql/win/CMakeFiles/CheckIncludeFiles/HAVE_ENDIAN_H.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/INT.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/LONG.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/LONG_LONG.c

@@ -1,0 +1,965 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3AF16838-110C-3E88-BD69-A15C1759F66E}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\mysql-5.7.33\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.19\Templates\CPackConfig.cmake.in;E:\mysql\mysql-5.7.33\VERSION;E:\mysql\mysql-5.7.33\cmake\abi_check.cmake;E:\mysql\mysql-5.7.33\cmake\boost.cmake;E:\mysql\mysql-5.7.33\cmake\build_configurations\compiler_options.cmake;E:\mysql\mysql-5.7.33\cmake\build_configurations\feature_set.cmake;E:\mysql\mysql-5.7.33\cmake\character_sets.cmake;E:\mysql\mysql-5.7.33\cmake\cmake_parse_arguments.cmake;E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\cmake\compiler_bugs.cmake;E:\mysql\mysql-5.7.33\cmake\cpack_source_ignore_files.cmake;E:\mysql\mysql-5.7.33\cmake\cpu_info.cmake;E:\mysql\mysql-5.7.33\cmake\curl.cmake;E:\mysql\mysql-5.7.33\cmake\dtrace.cmake;E:\mysql\mysql-5.7.33\cmake\floating_point.cmake;E:\mysql\mysql-5.7.33\cmake\info_macros.cmake.in;E:\mysql\mysql-5.7.33\cmake\install_layout.cmake;E:\mysql\mysql-5.7.33\cmake\install_macros.cmake;E:\mysql\mysql-5.7.33\cmake\ldap.cmake;E:\mysql\mysql-5.7.33\cmake\libevent.cmake;E:\mysql\mysql-5.7.33\cmake\libutils.cmake;E:\mysql\mysql-5.7.33\cmake\lz4.cmake;E:\mysql\mysql-5.7.33\cmake\maintainer.cmake;E:\mysql\mysql-5.7.33\cmake\mysql_add_executable.cmake;E:\mysql\mysql-5.7.33\cmake\mysql_version.cmake;E:\mysql\mysql-5.7.33\cmake\os\Windows.cmake;E:\mysql\mysql-5.7.33\cmake\os\WindowsCache.cmake;E:\mysql\mysql-5.7.33\cmake\package_name.cmake;E:\mysql\mysql-5.7.33\cmake\plugin.cmake;E:\mysql\mysql-5.7.33\cmake\protobuf.cmake;E:\mysql\mysql-5.7.33\cmake\readline.cmake;E:\mysql\mysql-5.7.33\cmake\rpc.cmake;E:\mysql\mysql-5.7.33\cmake\sasl.cmake;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\cmake\ssl.cmake;E:\mysql\mysql-5.7.33\cmake\tags.cmake;E:\mysql\mysql-5.7.33\cmake\versioninfo.rc.in;E:\mysql\mysql-5.7.33\cmake\zlib.cmake;E:\mysql\mysql-5.7.33\config.h.cmake;E:\mysql\mysql-5.7.33\configure.cmake;E:\mysql\mysql-5.7.33\include\mysql_version.h.in;E:\mysql\mysql-5.7.33\sql\sql_builtin.cc.in;E:\mysql\win\CMakeFiles\3.19.3\CMakeCCompiler.cmake;E:\mysql\win\CMakeFiles\3.19.3\CMakeCXXCompiler.cmake;E:\mysql\win\CMakeFiles\3.19.3\CMakeRCCompiler.cmake;E:\mysql\win\CMakeFiles\3.19.3\CMakeSystem.cmake;E:\mysql\win\CMakeFiles\CheckIncludeFiles\HAVE_CRYPT_H.c;E:\mysql\win\CMakeFiles\CheckIncludeFiles\HAVE_NUMAIF_H.c;E:\mysql\win\CMakeFiles\CheckIncludeFiles\HAVE_NUMA_H.c;E:\mysql\win\CMakeFiles\CheckIncludeFiles\HAVE_SASL_SASL_H.c;E:\mysql\win\CMakeFiles\CheckTypeSize\SIZEOF_IN6_ADDR.c;E:\mysql\win\CMakeFiles\CheckTypeSize\SIZEOF_SOCKADDR_IN6.c;E:\mysql\win\CMakeFiles\CheckTypeSize\SIZEOF_SOCKLEN_T.c;E:\mysql\win\CMakeFiles\CheckTypeSize\STRUCT_TIMESPEC.c;E:\mysql\win\find_libevent_version.c;E:\mysql\win\info_macros.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.19\Templates\CPackConfig.cmake.in;E:\mysql\mysql-5.7.33\VERSION;E:\mysql\mysql-5.7.33\cmake\abi_check.cmake;E:\mysql\mysql-5.7.33\cmake\boost.cmake;E:\mysql\mysql-5.7.33\cmake\build_configurations\compiler_options.cmake;E:\mysql\mysql-5.7.33\cmake\build_configurations\feature_set.cmake;E:\mysql\mysql-5.7.33\cmake\character_sets.cmake;E:\mysql\mysql-5.7.33\cmake\cmake_parse_arguments.cmake;E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\cmake\compiler_bugs.cmake;E:\mysql\mysql-5.7.33\cmake\cpack_source_ignore_files.cmake;E:\mysql\mysql-5.7.33\cmake\cpu_info.cmake;E:\mysql\mysql-5.7.33\cmake\curl.cmake;E:\mysql\mysql-5.7.33\cmake\dtrace.cmake;E:\mysql\mysql-5.7.33\cmake\floating_point.cmake;E:\mysql\mysql-5.7.33\cmake\info_macros.cmake.in;E:\mysql\mysql-5.7.33\cmake\install_layout.cmake;E:\mysql\mysql-5.7.33\cmake\install_macros.cmake;E:\mysql\mysql-5.7.33\cmake\ldap.cmake;E:\mysql\mysql-5.7.33\cmake\libevent.cmake;E:\mysql\mysql-5.7.33\cmake\libutils.cmake;E:\mysql\mysql-5.7.33\cmake\lz4.cmake;E:\mysql\mysql-5.7.33\cmake\maintainer.cmake;E:\mysql\mysql-5.7.33\cmake\mysql_add_executable.cmake;E:\mysql\mysql-5.7.33\cmake\mysql_version.cmake;E:\mysql\mysql-5.7.33\cmake\os\Windows.cmake;E:\mysql\mysql-5.7.33\cmake\os\WindowsCache.cmake;E:\mysql\mysql-5.7.33\cmake\package_name.cmake;E:\mysql\mysql-5.7.33\cmake\plugin.cmake;E:\mysql\mysql-5.7.33\cmake\protobuf.cmake;E:\mysql\mysql-5.7.33\cmake\readline.cmake;E:\mysql\mysql-5.7.33\cmake\rpc.cmake;E:\mysql\mysql-5.7.33\cmake\sasl.cmake;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\cmake\ssl.cmake;E:\mysql\mysql-5.7.33\cmake\tags.cmake;E:\mysql\mysql-5.7.33\cmake\versioninfo.rc.in;E:\mysql\mysql-5.7.33\cmake\zlib.cmake;E:\mysql\mysql-5.7.33\config.h.cmake;E:\mysql\mysql-5.7.33\configure.cmake;E:\mysql\mysql-5.7.33\include\mysql_version.h.in;E:\mysql\mysql-5.7.33\sql\sql_builtin.cc.in;E:\mysql\win\CMakeFiles\3.19.3\CMakeCCompiler.cmake;E:\mysql\win\CMakeFiles\3.19.3\CMakeCXXCompiler.cmake;E:\mysql\win\CMakeFiles\3.19.3\CMakeRCCompiler.cmake;E:\mysql\win\CMakeFiles\3.19.3\CMakeSystem.cmake;E:\mysql\win\CMakeFiles\CheckIncludeFiles\HAVE_CRYPT_H.c;E:\mysql\win\CMakeFiles\CheckIncludeFiles\HAVE_NUMAIF_H.c;E:\mysql\win\CMakeFiles\CheckIncludeFiles\HAVE_NUMA_H.c;E:\mysql\win\CMakeFiles\CheckIncludeFiles\HAVE_SASL_SASL_H.c;E:\mysql\win\CMakeFiles\CheckTypeSize\SIZEOF_IN6_ADDR.c;E:\mysql\win\CMakeFiles\CheckTypeSize\SIZEOF_SOCKADDR_IN6.c;E:\mysql\win\CMakeFiles\CheckTypeSize\SIZEOF_SOCKLEN_T.c;E:\mysql\win\CMakeFiles\CheckTypeSize\STRUCT_TIMESPEC.c;E:\mysql\win\find_libevent_version.c;E:\mysql\win\info_macros.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.19\Templates\CPackConfig.cmake.in;E:\mysql\mysql-5.7.33\VERSION;E:\mysql\mysql-5.7.33\cmake\abi_check.cmake;E:\mysql\mysql-5.7.33\cmake\boost.cmake;E:\mysql\mysql-5.7.33\cmake\build_configurations\compiler_options.cmake;E:\mysql\mysql-5.7.33\cmake\build_configurations\feature_set.cmake;E:\mysql\mysql-5.7.33\cmake\character_sets.cmake;E:\mysql\mysql-5.7.33\cmake\cmake_parse_arguments.cmake;E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\cmake\compiler_bugs.cmake;E:\mysql\mysql-5.7.33\cmake\cpack_source_ignore_files.cmake;E:\mysql\mysql-5.7.33\cmake\cpu_info.cmake;E:\mysql\mysql-5.7.33\cmake\curl.cmake;E:\mysql\mysql-5.7.33\cmake\dtrace.cmake;E:\mysql\mysql-5.7.33\cmake\floating_point.cmake;E:\mysql\mysql-5.7.33\cmake\info_macros.cmake.in;E:\mysql\mysql-5.7.33\cmake\install_layout.cmake;E:\mysql\mysql-5.7.33\cmake\install_macros.cmake;E:\mysql\mysql-5.7.33\cmake\ldap.cmake;E:\mysql\mysql-5.7.33\cmake\libevent.cmake;E:\mysql\mysql-5.7.33\cmake\libutils.cmake;E:\mysql\mysql-5.7.33\cmake\lz4.cmake;E:\mysql\mysql-5.7.33\cmake\maintainer.cmake;E:\mysql\mysql-5.7.33\cmake\mysql_add_executable.cmake;E:\mysql\mysql-5.7.33\cmake\mysql_version.cmake;E:\mysql\mysql-5.7.33\cmake\os\Windows.cmake;E:\mysql\mysql-5.7.33\cmake\os\WindowsCache.cmake;E:\mysql\mysql-5.7.33\cmake\package_name.cmake;E:\mysql\mysql-5.7.33\cmake\plugin.cmake;E:\mysql\mysql-5.7.33\cmake\protobuf.cmake;E:\mysql\mysql-5.7.33\cmake\readline.cmake;E:\mysql\mysql-5.7.33\cmake\rpc.cmake;E:\mysql\mysql-5.7.33\cmake\sasl.cmake;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\cmake\ssl.cmake;E:\mysql\mysql-5.7.33\cmake\tags.cmake;E:\mysql\mysql-5.7.33\cmake\versioninfo.rc.in;E:\mysql\mysql-5.7.33\cmake\zlib.cmake;E:\mysql\mysql-5.7.33\config.h.cmake;E:\mysql\mysql-5.7.33\configure.cmake;E:\mysql\mysql-5.7.33\include\mysql_version.h.in;E:\mysql\mysql-5.7.33\sql\sql_builtin.cc.in;E:\mysql\win\CMakeFiles\3.19.3\CMakeCCompiler.cmake;E:\mysql\win\CMakeFiles\3.19.3\CMakeCXXCompiler.cmake;E:\mysql\win\CMakeFiles\3.19.3\CMakeRCCompiler.cmake;E:\mysql\win\CMakeFiles\3.19.3\CMakeSystem.cmake;E:\mysql\win\CMakeFiles\CheckIncludeFiles\HAVE_CRYPT_H.c;E:\mysql\win\CMakeFiles\CheckIncludeFiles\HAVE_NUMAIF_H.c;E:\mysql\win\CMakeFiles\CheckIncludeFiles\HAVE_NUMA_H.c;E:\mysql\win\CMakeFiles\CheckIncludeFiles\HAVE_SASL_SASL_H.c;E:\mysql\win\CMakeFiles\CheckTypeSize\SIZEOF_IN6_ADDR.c;E:\mysql\win\CMakeFiles\CheckTypeSize\SIZEOF_SOCKADDR_IN6.c;E:\mysql\win\CMakeFiles\CheckTypeSize\SIZEOF_SOCKLEN_T.c;E:\mysql\win\CMakeFiles\CheckTypeSize\STRUCT_TIMESPEC.c;E:\mysql\win\find_libevent_version.c;E:\mysql\win\info_macros.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.19\Templates\CPackConfig.cmake.in;E:\mysql\mysql-5.7.33\VERSION;E:\mysql\mysql-5.7.33\cmake\abi_check.cmake;E:\mysql\mysql-5.7.33\cmake\boost.cmake;E:\mysql\mysql-5.7.33\cmake\build_configurations\compiler_options.cmake;E:\mysql\mysql-5.7.33\cmake\build_configurations\feature_set.cmake;E:\mysql\mysql-5.7.33\cmake\character_sets.cmake;E:\mysql\mysql-5.7.33\cmake\cmake_parse_arguments.cmake;E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\cmake\compiler_bugs.cmake;E:\mysql\mysql-5.7.33\cmake\cpack_source_ignore_files.cmake;E:\mysql\mysql-5.7.33\cmake\cpu_info.cmake;E:\mysql\mysql-5.7.33\cmake\curl.cmake;E:\mysql\mysql-5.7.33\cmake\dtrace.cmake;E:\mysql\mysql-5.7.33\cmake\floating_point.cmake;E:\mysql\mysql-5.7.33\cmake\info_macros.cmake.in;E:\mysql\mysql-5.7.33\cmake\install_layout.cmake;E:\mysql\mysql-5.7.33\cmake\install_macros.cmake;E:\mysql\mysql-5.7.33\cmake\ldap.cmake;E:\mysql\mysql-5.7.33\cmake\libevent.cmake;E:\mysql\mysql-5.7.33\cmake\libutils.cmake;E:\mysql\mysql-5.7.33\cmake\lz4.cmake;E:\mysql\mysql-5.7.33\cmake\maintainer.cmake;E:\mysql\mysql-5.7.33\cmake\mysql_add_executable.cmake;E:\mysql\mysql-5.7.33\cmake\mysql_version.cmake;E:\mysql\mysql-5.7.33\cmake\os\Windows.cmake;E:\mysql\mysql-5.7.33\cmake\os\WindowsCache.cmake;E:\mysql\mysql-5.7.33\cmake\package_name.cmake;E:\mysql\mysql-5.7.33\cmake\plugin.cmake;E:\mysql\mysql-5.7.33\cmake\protobuf.cmake;E:\mysql\mysql-5.7.33\cmake\readline.cmake;E:\mysql\mysql-5.7.33\cmake\rpc.cmake;E:\mysql\mysql-5.7.33\cmake\sasl.cmake;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\cmake\ssl.cmake;E:\mysql\mysql-5.7.33\cmake\tags.cmake;E:\mysql\mysql-5.7.33\cmake\versioninfo.rc.in;E:\mysql\mysql-5.7.33\cmake\zlib.cmake;E:\mysql\mysql-5.7.33\config.h.cmake;E:\mysql\mysql-5.7.33\configure.cmake;E:\mysql\mysql-5.7.33\include\mysql_version.h.in;E:\mysql\mysql-5.7.33\sql\sql_builtin.cc.in;E:\mysql\win\CMakeFiles\3.19.3\CMakeCCompiler.cmake;E:\mysql\win\CMakeFiles\3.19.3\CMakeCXXCompiler.cmake;E:\mysql\win\CMakeFiles\3.19.3\CMakeRCCompiler.cmake;E:\mysql\win\CMakeFiles\3.19.3\CMakeSystem.cmake;E:\mysql\win\CMakeFiles\CheckIncludeFiles\HAVE_CRYPT_H.c;E:\mysql\win\CMakeFiles\CheckIncludeFiles\HAVE_NUMAIF_H.c;E:\mysql\win\CMakeFiles\CheckIncludeFiles\HAVE_NUMA_H.c;E:\mysql\win\CMakeFiles\CheckIncludeFiles\HAVE_SASL_SASL_H.c;E:\mysql\win\CMakeFiles\CheckTypeSize\SIZEOF_IN6_ADDR.c;E:\mysql\win\CMakeFiles\CheckTypeSize\SIZEOF_SOCKADDR_IN6.c;E:\mysql\win\CMakeFiles\CheckTypeSize\SIZEOF_SOCKLEN_T.c;E:\mysql\win\CMakeFiles\CheckTypeSize\STRUCT_TIMESPEC.c;E:\mysql\win\find_libevent_version.c;E:\mysql\win\info_macros.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\mysql\win\ZERO_CHECK.vcxproj">
+      <Project>{B584D885-F4E3-3C53-87CE-DB7650C6F37C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\scripts\GenBootstrapPriv.vcxproj">
+      <Project>{F908CD32-95B0-3D6D-A336-5614DB760C8F}</Project>
+      <Name>GenBootstrapPriv</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\GenError.vcxproj">
+      <Project>{1646E8D2-EEAA-3B10-A0C2-72DAFC9AD060}</Project>
+      <Name>GenError</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\scripts\GenFixPrivs.vcxproj">
+      <Project>{C1466A03-F923-3D74-B498-31CA7A6BD3D4}</Project>
+      <Name>GenFixPrivs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\rapid\plugin\x\GenLiteProtos.vcxproj">
+      <Project>{1D3B99A8-82B8-3E2D-9F2E-0D7BC5A2799E}</Project>
+      <Name>GenLiteProtos</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\scripts\GenSysSchema.vcxproj">
+      <Project>{9FB6B851-C7CE-3CFC-90EC-0D35D9B179F5}</Project>
+      <Name>GenSysSchema</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\INFO_BIN.vcxproj">
+      <Project>{29AF911E-F17B-3B95-AEC1-D4316F2DCA9C}</Project>
+      <Name>INFO_BIN</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\INFO_SRC.vcxproj">
+      <Project>{71E1CBF6-456B-3DAA-B965-86AD32C7ADCA}</Project>
+      <Name>INFO_SRC</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\archive\archive.vcxproj">
+      <Project>{6AE0E3D2-06FB-3CE1-8AB7-65CECFE5020D}</Project>
+      <Name>archive</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\archive\archive_embedded.vcxproj">
+      <Project>{19FBB4E2-1708-3418-98DF-E503960CA93F}</Project>
+      <Name>archive_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\audit_null\audit_null.vcxproj">
+      <Project>{E1A05CC1-3018-3CC4-BF30-81270E4F8A6C}</Project>
+      <Name>audit_null</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\auth\auth.vcxproj">
+      <Project>{12625AF8-178A-3B3B-A4C9-88A78A6B7D15}</Project>
+      <Name>auth</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\auth\auth_test_plugin.vcxproj">
+      <Project>{6BB0EB5A-F27A-3691-AFB3-7CEC05AA33E8}</Project>
+      <Name>auth_test_plugin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libmysql\authentication_win\auth_win_client.vcxproj">
+      <Project>{56031BEE-118D-3620-8A8F-056FDE88D436}</Project>
+      <Name>auth_win_client</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\mysys\base64_test.vcxproj">
+      <Project>{640F0345-0422-3D5F-B5B1-6F3931AA33F6}</Project>
+      <Name>base64_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\unittest\mytap\t\basic-t.vcxproj">
+      <Project>{6346B3F4-5771-300F-A7D3-7CDC74FD9078}</Project>
+      <Name>basic-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\binlog.vcxproj">
+      <Project>{CAA692D8-6307-3A8E-A742-7B2247FDA5D3}</Project>
+      <Name>binlog</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libbinlogevents\src\binlogevents_static.vcxproj">
+      <Project>{4FFE80BD-B075-381D-ACBD-A4E0841B7D1B}</Project>
+      <Name>binlogevents_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libbinlogstandalone\src\binlogstandalone_shared.vcxproj">
+      <Project>{16BC647F-3486-3141-976D-86236B605C01}</Project>
+      <Name>binlogstandalone_shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libbinlogstandalone\src\binlogstandalone_static.vcxproj">
+      <Project>{E6F3CDDE-2169-3E65-BD3E-FB90024870EF}</Project>
+      <Name>binlogstandalone_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\blackhole\blackhole.vcxproj">
+      <Project>{DB006AE9-A187-3038-97FD-3D58FA23A3BC}</Project>
+      <Name>blackhole</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\blackhole\blackhole_embedded.vcxproj">
+      <Project>{BF1CCC5F-3432-343A-A4BE-8E930B553311}</Project>
+      <Name>blackhole_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\testclients\bug25714.vcxproj">
+      <Project>{E3E847BC-667A-37A3-A76A-A15ED6F858A6}</Project>
+      <Name>bug25714</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libmysql\clientlib.vcxproj">
+      <Project>{CE58D4C9-B201-3CAD-84D6-84CD83A9C0DA}</Project>
+      <Name>clientlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\comp_err.vcxproj">
+      <Project>{94739AEC-AED6-3796-9562-968256D0F8E5}</Project>
+      <Name>comp_err</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\scripts\comp_sql.vcxproj">
+      <Project>{DBCB2D61-6ED6-319B-8D3C-F323842D9B65}</Project>
+      <Name>comp_sql</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\connection_control\connection_control.vcxproj">
+      <Project>{8255C738-C0FD-3E69-8667-119F54CFEF2D}</Project>
+      <Name>connection_control</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\csv\csv.vcxproj">
+      <Project>{96CDAFE2-DDFA-3B15-BB9A-977E5F9E9D24}</Project>
+      <Name>csv</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\csv\csv_embedded.vcxproj">
+      <Project>{70E49599-B4C7-3E16-A98B-E1792C5FD5D0}</Project>
+      <Name>csv_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\daemon_example\daemon_example.vcxproj">
+      <Project>{45504577-45F3-3A24-AF73-527A9030EAF9}</Project>
+      <Name>daemon_example</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\dbug\dbug.vcxproj">
+      <Project>{2ED86B42-3F5D-36C7-8F8A-C180527B4582}</Project>
+      <Name>dbug</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\echo.vcxproj">
+      <Project>{80B4AA7B-03F2-37E2-9DAF-36A19990C3D5}</Project>
+      <Name>echo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\libevent\libevent-2.1.11-stable\event_core.vcxproj">
+      <Project>{4C39724E-C765-331A-A645-47E2AF4B71A3}</Project>
+      <Name>event_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\libevent\libevent-2.1.11-stable\event_extra.vcxproj">
+      <Project>{48798992-2905-37FF-B14F-38A31E57B3C5}</Project>
+      <Name>event_extra</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\libevent\libevent-2.1.11-stable\event_openssl.vcxproj">
+      <Project>{A01C16A1-EFE4-30BC-A6A3-3D396B45E0C1}</Project>
+      <Name>event_openssl</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\example\example.vcxproj">
+      <Project>{D4C028DB-880D-362F-8292-AB8039622298}</Project>
+      <Name>example</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\federated\federated.vcxproj">
+      <Project>{A229ADCB-73DA-3CCE-8960-4EA21E639587}</Project>
+      <Name>federated</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\federated\federated_embedded.vcxproj">
+      <Project>{83E2C7E7-19E3-3846-A488-17B297FD3FE5}</Project>
+      <Name>federated_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\fulltext\ftexample.vcxproj">
+      <Project>{8B806209-7B7A-324B-8C58-81A8E6A549AD}</Project>
+      <Name>ftexample</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\gen_lex_hash.vcxproj">
+      <Project>{705DBFEF-E45D-3219-AA2A-CFC9A4F4692A}</Project>
+      <Name>gen_lex_hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\gen_lex_token.vcxproj">
+      <Project>{7F6C23D4-9BF0-3B6E-86D9-412DFFDA3D7F}</Project>
+      <Name>gen_lex_token</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\rapid\plugin\group_replication\gr_unit_test_resource.vcxproj">
+      <Project>{4BA6EB99-1811-3F0A-8288-36CD594B3C96}</Project>
+      <Name>gr_unit_test_resource</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\rapid\plugin\group_replication\group_replication.vcxproj">
+      <Project>{7EFEDD32-9CD0-360F-9A66-81785E554880}</Project>
+      <Name>group_replication</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\heap\heap.vcxproj">
+      <Project>{0F42567A-9FD8-36DA-B314-8B4A59CB9AA4}</Project>
+      <Name>heap</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\heap\heap_embedded.vcxproj">
+      <Project>{E1BD61F3-385C-3090-BD49-7D857823C14E}</Project>
+      <Name>heap_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\heap\hp_test1.vcxproj">
+      <Project>{04CA3A3D-36B4-371C-B1A6-4D614D3EFD84}</Project>
+      <Name>hp_test1</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\heap\hp_test2.vcxproj">
+      <Project>{F28C24A4-CDC6-35E6-8A20-AD807B881A60}</Project>
+      <Name>hp_test2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\innobase\innobase.vcxproj">
+      <Project>{6746C6E7-6281-3472-A771-D7781513B35E}</Project>
+      <Name>innobase</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\innochecksum.vcxproj">
+      <Project>{356AFA3D-179A-3B36-B09F-E888941F3A69}</Project>
+      <Name>innochecksum</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\keyring\keyring_file.vcxproj">
+      <Project>{8DEFC022-22A3-3AD7-BA46-045227336B61}</Project>
+      <Name>keyring_file</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\rapid\plugin\keyring_udf\keyring_udf.vcxproj">
+      <Project>{EB5830A8-931E-3FE1-B240-77D690B35FA7}</Project>
+      <Name>keyring_udf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libmysql\libmysql.vcxproj">
+      <Project>{0FAF9294-FDA2-3749-8C4D-8C82E596D902}</Project>
+      <Name>libmysql</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libmysql\libmysql_api_test.vcxproj">
+      <Project>{6C10E7EA-02BF-3C08-884B-270641F1BC00}</Project>
+      <Name>libmysql_api_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libmysqld\libmysqld.vcxproj">
+      <Project>{C6A2AEC7-8008-3767-8A48-CF1C8953124A}</Project>
+      <Name>libmysqld</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\locking_service.vcxproj">
+      <Project>{CAA41B6F-36D1-3009-B21A-A4E4F0B3CA28}</Project>
+      <Name>locking_service</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\lz4_decompress.vcxproj">
+      <Project>{A7550CE1-8C2C-33BD-A7B6-BFB080BBCAF1}</Project>
+      <Name>lz4_decompress</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\lz4_lib.vcxproj">
+      <Project>{F6D8720E-5A53-3227-A9ED-B80A7E322A76}</Project>
+      <Name>lz4_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\master.vcxproj">
+      <Project>{5D0EEBFF-2A5B-34F6-9A8B-D3DFE730C611}</Project>
+      <Name>master</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\my_print_defaults.vcxproj">
+      <Project>{31578A45-6353-34C0-9EEC-E84004AAF709}</Project>
+      <Name>my_print_defaults</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\mysql-test\lib\My\SafeProcess\my_safe_kill.vcxproj">
+      <Project>{45B3ED8A-E919-3940-80A0-EDA8ACFE16C4}</Project>
+      <Name>my_safe_kill</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\mysql-test\lib\My\SafeProcess\my_safe_process.vcxproj">
+      <Project>{2653F27D-35DF-3A48-86E3-0D1F317EF8A0}</Project>
+      <Name>my_safe_process</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\myisam\myisam.vcxproj">
+      <Project>{B0AFAB73-239A-38ED-8D1D-73FAF36C6DEB}</Project>
+      <Name>myisam</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\myisam\myisam_embedded.vcxproj">
+      <Project>{F3BE071C-0CF9-3D72-A0A1-7FFD12505464}</Project>
+      <Name>myisam_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\myisam\myisam_ftdump.vcxproj">
+      <Project>{374D2CA9-DF69-3098-A364-514B7344309D}</Project>
+      <Name>myisam_ftdump</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\myisam\myisamchk.vcxproj">
+      <Project>{C1F145D3-CEEB-3900-A0C7-40E01A0DCA7B}</Project>
+      <Name>myisamchk</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\myisam\myisamlog.vcxproj">
+      <Project>{3FE33802-A3F9-3E07-BF04-846B902F74AE}</Project>
+      <Name>myisamlog</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\myisammrg\myisammrg.vcxproj">
+      <Project>{861C3C3A-A6AF-3907-BFB4-CE78FF9FD878}</Project>
+      <Name>myisammrg</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\myisammrg\myisammrg_embedded.vcxproj">
+      <Project>{A39879F3-9619-3F5D-B2A0-92DBC1262E57}</Project>
+      <Name>myisammrg_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\myisam\myisampack.vcxproj">
+      <Project>{EA704173-0380-3A27-85B4-1ABF0C0ACFE7}</Project>
+      <Name>myisampack</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\mysql.vcxproj">
+      <Project>{DE15D579-5A53-3296-87C7-DD7F5454F8AC}</Project>
+      <Name>mysql</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\testclients\mysql_client_test.vcxproj">
+      <Project>{32392CCD-9159-34E3-83A3-6168AFC3728F}</Project>
+      <Name>mysql_client_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libmysqld\examples\mysql_client_test_embedded.vcxproj">
+      <Project>{5C9A8725-A516-3B26-8813-00BF0EC1AFEB}</Project>
+      <Name>mysql_client_test_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\mysql_config_editor.vcxproj">
+      <Project>{9583A019-BB43-3C8D-BFB9-B04B951E7A34}</Project>
+      <Name>mysql_config_editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libmysqld\examples\mysql_embedded.vcxproj">
+      <Project>{2E553D94-5454-3ABE-9B01-33CD99BFA6A6}</Project>
+      <Name>mysql_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\auth\mysql_no_login.vcxproj">
+      <Project>{A1EBB645-6620-3269-840A-6995DA3E1D83}</Project>
+      <Name>mysql_no_login</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\mysql_plugin.vcxproj">
+      <Project>{7DDA9994-0AEF-3110-AD8C-B61DFFFF7785}</Project>
+      <Name>mysql_plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\mysql_secure_installation.vcxproj">
+      <Project>{0ABBCB6A-0092-3598-9E65-92148F19808D}</Project>
+      <Name>mysql_secure_installation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\mysql_ssl_rsa_setup.vcxproj">
+      <Project>{FA09D6D0-9088-342A-8813-722A85914220}</Project>
+      <Name>mysql_ssl_rsa_setup</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\mysql_tzinfo_to_sql.vcxproj">
+      <Project>{95B399B4-F532-308C-A774-228712954E40}</Project>
+      <Name>mysql_tzinfo_to_sql</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\mysql_upgrade.vcxproj">
+      <Project>{F0BBFC48-A651-3E6F-9F5F-E84A33A271C9}</Project>
+      <Name>mysql_upgrade</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\mysqladmin.vcxproj">
+      <Project>{6822D0BD-BADF-31C5-A8B8-202F3B0F792F}</Project>
+      <Name>mysqladmin</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\mysqlbinlog.vcxproj">
+      <Project>{816D89D9-F844-3B68-A1A0-2C349F940AB8}</Project>
+      <Name>mysqlbinlog</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\mysqlcheck.vcxproj">
+      <Project>{2039E5D3-A390-3F3E-B60E-960A5AEB5DB5}</Project>
+      <Name>mysqlcheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\mysqlcheck_core.vcxproj">
+      <Project>{FF8B2636-D1A7-363D-A0E0-CF76E676EA95}</Project>
+      <Name>mysqlcheck_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libmysql\mysqlclient.vcxproj">
+      <Project>{D150B1EC-64DA-3A08-AE70-31FE9E60E09F}</Project>
+      <Name>mysqlclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\mysqld.vcxproj">
+      <Project>{46F27060-8B60-3C50-A8AF-BE3DD3A2BBE1}</Project>
+      <Name>mysqld</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\mysqldump.vcxproj">
+      <Project>{E03B6E7A-8467-399C-A86A-22427CD5FB63}</Project>
+      <Name>mysqldump</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\mysqlimport.vcxproj">
+      <Project>{CB2B77D9-B552-3F17-8FC2-7A4D9397DAE4}</Project>
+      <Name>mysqlimport</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\dump\mysqlpump.vcxproj">
+      <Project>{A5AB7069-B9EC-3FF5-853A-98404BCB44F0}</Project>
+      <Name>mysqlpump</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\dump\mysqlpump_lib.vcxproj">
+      <Project>{083022FF-5539-3AAC-910D-E3F52A2B8AD7}</Project>
+      <Name>mysqlpump_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libmysqld\mysqlserver.vcxproj">
+      <Project>{4B64C7B9-0F6E-3E5C-A6B4-ED7A0C51030A}</Project>
+      <Name>mysqlserver</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libservices\mysqlservices.vcxproj">
+      <Project>{3D32B18C-E16A-38D9-ADD4-A43C74228CE2}</Project>
+      <Name>mysqlservices</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\mysqlshow.vcxproj">
+      <Project>{F009B830-D99A-3B0E-9496-8A68F14E743F}</Project>
+      <Name>mysqlshow</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\mysqlslap.vcxproj">
+      <Project>{DB80AF88-A9AC-3BDE-8D82-4A6D53808C02}</Project>
+      <Name>mysqlslap</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\client\mysqltest.vcxproj">
+      <Project>{83966248-3936-3842-806D-97C0ADD1048C}</Project>
+      <Name>mysqltest</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libmysqld\examples\mysqltest_embedded.vcxproj">
+      <Project>{9D51BC0D-2922-3EC8-8D0D-4DB5CBCD8966}</Project>
+      <Name>mysqltest_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\rapid\plugin\x\mysqlx.vcxproj">
+      <Project>{8480A5C7-0305-374A-8A4F-2DED00ED58B4}</Project>
+      <Name>mysqlx</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\rapid\plugin\x\mysqlxtest.vcxproj">
+      <Project>{877662F4-CCFE-3164-8144-15B87591EDC6}</Project>
+      <Name>mysqlxtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\mysys_ssl\mysys_ssl.vcxproj">
+      <Project>{408604CE-0631-3C50-99E9-BB2BE0F05956}</Project>
+      <Name>mysys_ssl</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\unittest\mytap\mytap.vcxproj">
+      <Project>{0544D2D4-818A-3405-9627-4070294376B0}</Project>
+      <Name>mytap</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\fulltext\ngram_parser.vcxproj">
+      <Project>{A9AB16E0-1176-301F-B7CF-0670C68E1B20}</Project>
+      <Name>ngram_parser</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\unittest\examples\no_plan-t.vcxproj">
+      <Project>{731A4775-F4B0-3192-B360-B63C6E7FF3DD}</Project>
+      <Name>no_plan-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\partition\partition.vcxproj">
+      <Project>{BF6A5E4B-ACFA-314B-988B-7F24DE500A60}</Project>
+      <Name>partition</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\partition\partition_embedded.vcxproj">
+      <Project>{AB89B821-1141-31D0-999F-18DE997F7679}</Project>
+      <Name>partition_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\perfschema\perfschema.vcxproj">
+      <Project>{4568155F-2CB6-3219-B469-B46025538EE2}</Project>
+      <Name>perfschema</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\perror.vcxproj">
+      <Project>{8117571E-C810-392C-B002-819126460ABB}</Project>
+      <Name>perror</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\perfschema\unittest\pfs-t.vcxproj">
+      <Project>{66340D5A-C3A2-39D4-90E5-F26517DAF353}</Project>
+      <Name>pfs-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\perfschema\unittest\pfs_account-oom-t.vcxproj">
+      <Project>{9A17E186-9DD9-34F5-B968-2E6460DFBAC9}</Project>
+      <Name>pfs_account-oom-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\perfschema\unittest\pfs_connect_attr-t.vcxproj">
+      <Project>{CE361DFE-A9B6-37AB-987B-F83BE04674E8}</Project>
+      <Name>pfs_connect_attr-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\perfschema\unittest\pfs_host-oom-t.vcxproj">
+      <Project>{3538D680-D4A4-3316-B38A-95F4212598C4}</Project>
+      <Name>pfs_host-oom-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\perfschema\unittest\pfs_instr-oom-t.vcxproj">
+      <Project>{58BB37D0-A694-33EA-B0FE-E6956C31B6BC}</Project>
+      <Name>pfs_instr-oom-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\perfschema\unittest\pfs_instr-t.vcxproj">
+      <Project>{95C94728-4BAA-3FE2-B0EB-EB8572405BC5}</Project>
+      <Name>pfs_instr-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\perfschema\unittest\pfs_instr_class-oom-t.vcxproj">
+      <Project>{15891BD8-3CCB-3650-81C5-67A7E232C030}</Project>
+      <Name>pfs_instr_class-oom-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\perfschema\unittest\pfs_instr_class-t.vcxproj">
+      <Project>{DB2E50B1-0998-3390-A218-052A99F8F6AF}</Project>
+      <Name>pfs_instr_class-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\perfschema\unittest\pfs_misc-t.vcxproj">
+      <Project>{D207AF39-52D3-36B3-93A1-505CF9310DD4}</Project>
+      <Name>pfs_misc-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\perfschema\unittest\pfs_noop-t.vcxproj">
+      <Project>{562BC62E-C0BD-372B-B605-9A6F399CE4BF}</Project>
+      <Name>pfs_noop-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\perfschema\unittest\pfs_server_stubs.vcxproj">
+      <Project>{35CC308B-A6A0-30D0-A277-DF21006C7530}</Project>
+      <Name>pfs_server_stubs</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\perfschema\unittest\pfs_user-oom-t.vcxproj">
+      <Project>{3E0CC1B3-CE6D-3422-B1FA-3A314EFEA558}</Project>
+      <Name>pfs_user-oom-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\auth\qa_auth_client.vcxproj">
+      <Project>{A6684C21-DB7D-35A9-8440-8343F6A328E4}</Project>
+      <Name>qa_auth_client</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\auth\qa_auth_interface.vcxproj">
+      <Project>{06A004ED-53A8-3416-B3A4-2E9E25153852}</Project>
+      <Name>qa_auth_interface</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\auth\qa_auth_server.vcxproj">
+      <Project>{08827DFF-BF8B-3F4E-8307-DC0CFC968B9F}</Project>
+      <Name>qa_auth_server</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\mysys\queues.vcxproj">
+      <Project>{ACC6D094-D673-3029-BEA1-241E4C70766A}</Project>
+      <Name>queues</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\regex\re.vcxproj">
+      <Project>{68FF4B7A-C47A-3EDA-AF8A-8B294E3F698E}</Project>
+      <Name>re</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\regex\regex.vcxproj">
+      <Project>{BFCC9E34-4810-3108-8764-9D8BD0AA607F}</Project>
+      <Name>regex</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\replace.vcxproj">
+      <Project>{FD8D6462-0691-37D0-80ED-A8D9ED547591}</Project>
+      <Name>replace</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\replication_observers_example\replication_observers_example.vcxproj">
+      <Project>{A1BB23A3-E089-32A3-855E-6A3CF94CB53E}</Project>
+      <Name>replication_observers_example</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\resolveip.vcxproj">
+      <Project>{6E1B6F75-6056-306A-8B91-51D7A94FD3C6}</Project>
+      <Name>resolveip</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\rewrite_example\rewrite_example.vcxproj">
+      <Project>{D9E5CE55-9FC9-31B7-9F6F-31450E753B40}</Project>
+      <Name>rewrite_example</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\rewriter\rewriter.vcxproj">
+      <Project>{3F5B7A84-32B6-38E4-9A78-7C917D28882B}</Project>
+      <Name>rewriter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\rpl.vcxproj">
+      <Project>{DA3C561F-FA63-367D-93A4-728E863A222F}</Project>
+      <Name>rpl</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\semisync\semisync_master.vcxproj">
+      <Project>{2061CA49-2CE5-362D-AAE2-AD886D36930F}</Project>
+      <Name>semisync_master</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\semisync\semisync_slave.vcxproj">
+      <Project>{004006E3-3FE5-303D-A7B5-9E9BAE849D69}</Project>
+      <Name>semisync_slave</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\unittest\examples\simple-t.vcxproj">
+      <Project>{0CCFED50-ECBD-35C8-8492-A1C38DAA1DBE}</Project>
+      <Name>simple-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\unittest\examples\skip-t.vcxproj">
+      <Project>{CB041535-0779-30E1-8B44-5366833B5B73}</Project>
+      <Name>skip-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\unittest\examples\skip_all-t.vcxproj">
+      <Project>{AD159403-EC69-3295-A920-A31577001F9E}</Project>
+      <Name>skip_all-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\slave.vcxproj">
+      <Project>{EC8BAE27-C10C-350A-9948-855AB2256F19}</Project>
+      <Name>slave</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\sql.vcxproj">
+      <Project>{6AD2635E-4D7D-3E36-8585-D299C2015485}</Project>
+      <Name>sql</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libmysqld\sql_embedded.vcxproj">
+      <Project>{A2FC0F41-D71B-3666-BDA3-D6D041CA4A72}</Project>
+      <Name>sql_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\sqlgunitlib.vcxproj">
+      <Project>{149C0068-BE9F-3EF0-8AFE-CF2C7BBEFA96}</Project>
+      <Name>sqlgunitlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\strings\strings.vcxproj">
+      <Project>{EAA77626-0230-3057-8B78-4AA35C676FA1}</Project>
+      <Name>strings</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_services\test_framework.vcxproj">
+      <Project>{79114BB6-A9FE-37E3-8988-94FAAB305535}</Project>
+      <Name>test_framework</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\audit_null\test_security_context.vcxproj">
+      <Project>{63F02494-4E0C-3820-9357-A7F1E029389A}</Project>
+      <Name>test_security_context</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_services\test_services.vcxproj">
+      <Project>{BDF60431-1CFC-32BC-B0A5-0D59FA87CD65}</Project>
+      <Name>test_services</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_services\test_services_thread.vcxproj">
+      <Project>{E2F56217-E94E-3914-B84F-E1500854BFC6}</Project>
+      <Name>test_services_thread</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_session_detach.vcxproj">
+      <Project>{B60B16A0-0E53-3B7E-82B9-38728EB58AB9}</Project>
+      <Name>test_session_detach</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_session_in_thd.vcxproj">
+      <Project>{A868989A-02ED-3E24-A18B-95D0B155634E}</Project>
+      <Name>test_session_in_thd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_session_info.vcxproj">
+      <Project>{111B2291-40DD-3E7F-A684-C0D8165A4359}</Project>
+      <Name>test_session_info</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_sql_2_sessions.vcxproj">
+      <Project>{C3508FF6-3540-388A-AC57-85DF9928AF9E}</Project>
+      <Name>test_sql_2_sessions</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_sql_all_col_types.vcxproj">
+      <Project>{67D5740A-77F7-3AF6-9F09-DD77239D2864}</Project>
+      <Name>test_sql_all_col_types</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_sql_cmds_1.vcxproj">
+      <Project>{DB46139E-D810-3DDD-AEF3-8B947769078A}</Project>
+      <Name>test_sql_cmds_1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_sql_commit.vcxproj">
+      <Project>{A10AAD3B-7DD2-323E-881D-9E81B0FE9F41}</Project>
+      <Name>test_sql_commit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_sql_complex.vcxproj">
+      <Project>{FDF3C46B-BFC6-3B97-8285-AB31F564BF25}</Project>
+      <Name>test_sql_complex</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_sql_errors.vcxproj">
+      <Project>{BEC0D09C-8D0C-32E5-92D1-2597BB5D77A3}</Project>
+      <Name>test_sql_errors</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_sql_lock.vcxproj">
+      <Project>{A8FCBFE6-A8A9-31D4-B82B-A17FF3C56848}</Project>
+      <Name>test_sql_lock</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_sql_processlist.vcxproj">
+      <Project>{F678D62C-16C3-3840-AC4C-A991300C591F}</Project>
+      <Name>test_sql_processlist</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_sql_replication.vcxproj">
+      <Project>{96B32A20-361F-32E6-B9D9-BE179004BC8B}</Project>
+      <Name>test_sql_replication</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_sql_shutdown.vcxproj">
+      <Project>{0206CD4F-327C-3C30-87C5-D0C669EC1E7E}</Project>
+      <Name>test_sql_shutdown</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_sql_sqlmode.vcxproj">
+      <Project>{57B4B212-3284-3D37-866A-F886771B2DDD}</Project>
+      <Name>test_sql_sqlmode</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_sql_stored_procedures_functions.vcxproj">
+      <Project>{0E0E4598-B952-3FD0-A08D-798ED66238D0}</Project>
+      <Name>test_sql_stored_procedures_functions</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_sql_views_triggers.vcxproj">
+      <Project>{F65036EA-F275-36B8-90E5-059D33E0AEF1}</Project>
+      <Name>test_sql_views_triggers</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\udf_services\test_udf_services.vcxproj">
+      <Project>{9BA5840A-DF0C-3F60-8E3E-259B92F7513B}</Project>
+      <Name>test_udf_services</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_x_sessions_deinit.vcxproj">
+      <Project>{64ADD9E1-BB15-3F6A-A02E-E14E588247F8}</Project>
+      <Name>test_x_sessions_deinit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\test_service_sql_api\test_x_sessions_init.vcxproj">
+      <Project>{9B860630-51BF-30DA-996A-59C0C69BCC76}</Project>
+      <Name>test_x_sessions_init</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\mysys\thr_lock.vcxproj">
+      <Project>{7FD0EA22-4FF6-30A4-AC2E-F08AEE2999F1}</Project>
+      <Name>thr_lock</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\unittest\examples\todo-t.vcxproj">
+      <Project>{37F7D3DE-8A92-323B-B543-ED144FE758EB}</Project>
+      <Name>todo-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\udf_example.vcxproj">
+      <Project>{73C392B5-3035-399A-9847-C59F41DAA8D5}</Project>
+      <Name>udf_example</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\password_validation\validate_password.vcxproj">
+      <Project>{AB549146-5FB0-3D13-A8FA-8861CB5B8CF6}</Project>
+      <Name>validate_password</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\version_token\version_token.vcxproj">
+      <Project>{08C114F5-EA59-3FEE-9D59-336A699855AA}</Project>
+      <Name>version_token</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\vio\vio.vcxproj">
+      <Project>{06651924-7EDE-3C99-B5A4-5CC95C0A9A92}</Project>
+      <Name>vio</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\zlib\zlib.vcxproj">
+      <Project>{DBF2F168-6899-38B9-84E7-4811A2A78621}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\zlib_decompress.vcxproj">
+      <Project>{C0168F3D-4362-37F1-A802-E47B13E456AC}</Project>
+      <Name>zlib_decompress</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

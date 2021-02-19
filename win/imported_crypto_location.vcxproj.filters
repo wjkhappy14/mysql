@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\e920991c1f5fe4471b8efcabf40e4e61\imported_crypto_location.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\mysql-5.7.33\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\mysql\win\CMakeFiles\imported_crypto_location" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{02E1C3A9-D35B-39DD-A407-43464815AC39}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

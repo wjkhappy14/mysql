@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\pax_msg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_base.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_memory.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_str.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_cfg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_cache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_transport.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\node_address.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_msg_queue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_statistics.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\app_data.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\site_def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_ssl_transport.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_recover.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\task.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\bitset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\simset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\node_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_interface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\node_list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\task_debug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\sock_probe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\task_net.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\synode_no.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_detector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\xdr_float.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\xdr_ref.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\xdr_array.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\xdr_sizeof.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\xdr_mem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\xdr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_xdr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_logging.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\xplatform\my_xp_cond.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\xplatform\my_xp_thread.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\xplatform\my_xp_mutex.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\xplatform\my_xp_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_view.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_types.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_message.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_member_identifier.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_group_identifier.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\gcs_interface_factory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_communication_interface.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_control_interface.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_group_management.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_internal_message.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_networking.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_state_exchange.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_group_member_information.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_message_stages.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_view_identifier.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_interface.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_notification.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_message_stage_lz4.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_statistics_interface.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\applier.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\auto_increment.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\certifier.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\channel_observation_manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\delayed_plugin_initialization.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\gcs_event_handlers.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\gcs_logger.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\gcs_operations.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\gcs_plugin_messages.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\gcs_view_modification_notifier.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\group_partition_handling.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\member_info.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\observer_server_actions.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\observer_server_channels.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\observer_server_state.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\observer_trans.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\pipeline_factory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\pipeline_stats.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\plugin.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\plugin_psi.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\plugin_utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\ps_information.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\read_mode_handler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\recovery.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\recovery_channel_state_observer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\applier_channel_state_observer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\asynchronous_channels_state_observer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\recovery_message.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\recovery_state_transfer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\replication_threads_api.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\single_primary_message.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\member_version.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\compatibility_module.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\handlers\applier_handler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\handlers\certification_handler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\handlers\event_cataloger.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\sql_service\sql_resultset.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\sql_service\sql_service_context.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\sql_service\sql_service_context_base.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\sql_service\sql_service_interface.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\sql_service\sql_command_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\sql_service\sql_service_command.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\24d3279a9b5428c23c65dc14bc800465\xcom_vp.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="E:\mysql\win\versioninfo_dll.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{02E1C3A9-D35B-39DD-A407-43464815AC39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DBC9E969-B080-3702-8F2F-24E894CA22A5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

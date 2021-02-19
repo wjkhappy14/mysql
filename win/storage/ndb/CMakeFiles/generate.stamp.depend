@@ -1,0 +1,3 @@
+# CMake generation dependency list for this directory.
+E:/mysql/mysql-5.7.33/storage/ndb/CMakeLists.txt
+E:/mysql/mysql-5.7.33/storage/ndb/cmake/ndb_add_target_property.cmake

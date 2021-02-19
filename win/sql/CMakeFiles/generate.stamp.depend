@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+E:/mysql/mysql-5.7.33/cmake/bison.cmake
+E:/mysql/mysql-5.7.33/cmake/compile_flags.cmake
+E:/mysql/mysql-5.7.33/cmake/make_dist.cmake.in
+E:/mysql/mysql-5.7.33/cmake/save_archive_location.cmake.in
+E:/mysql/mysql-5.7.33/sql/CMakeLists.txt
+E:/mysql/mysql-5.7.33/sql/sql_hints.yy.cc
+E:/mysql/mysql-5.7.33/sql/sql_hints.yy.h
+E:/mysql/mysql-5.7.33/sql/sql_yacc.cc
+E:/mysql/mysql-5.7.33/sql/sql_yacc.h

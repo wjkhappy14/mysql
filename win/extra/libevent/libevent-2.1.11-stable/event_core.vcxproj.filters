@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\buffer.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\bufferevent.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\bufferevent_filter.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\bufferevent_pair.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\bufferevent_ratelim.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\bufferevent_sock.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\event.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\evmap.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\evthread.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\evutil.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\evutil_rand.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\evutil_time.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\listener.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\log.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\signal.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\strlcpy.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\evthread_win32.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\buffer_iocp.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\bufferevent_async.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\event_iocp.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\win32select.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Core">
+      <UniqueIdentifier>{F47E235B-4FA2-3875-A86E-F731DB14FEDA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

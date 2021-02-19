@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\0ff8e42b84ef67121d5ad35a9f9ea2f6\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{02E1C3A9-D35B-39DD-A407-43464815AC39}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

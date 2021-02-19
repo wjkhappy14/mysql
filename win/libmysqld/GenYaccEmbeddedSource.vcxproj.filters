@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\c8ca42a6780bf6ac7e647a506e99ce78\sql_yacc.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\c8ca42a6780bf6ac7e647a506e99ce78\sql_hints.yy.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\c8ca42a6780bf6ac7e647a506e99ce78\lex_hash.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\7a1881ae761f31170d5adff57a005991\GenYaccEmbeddedSource.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\mysql-5.7.33\libmysqld\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\mysql\win\libmysqld\CMakeFiles\GenYaccEmbeddedSource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{02E1C3A9-D35B-39DD-A407-43464815AC39}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

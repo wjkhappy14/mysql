@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7EFEDD32-9CD0-360F-9A66-81785E554880}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>group_replication</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\group_replication\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">group_replication.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">group_replication</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\group_replication\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">group_replication.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">group_replication</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\group_replication\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">group_replication.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">group_replication</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\group_replication\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">group_replication.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">group_replication</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\group_replication\xdr_gen;E:\mysql\mysql-5.7.33\libbinlogevents\include;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\rpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include\sql_service;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql\gcs;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom;E:\mysql\win\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ENABLED_DEBUG_SYNC;SAFE_MUTEX;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;MYSQL_DYNAMIC_PLUGIN;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;XCOM_HAVE_OPENSSL;CMAKE_INTDIR="Debug";group_replication_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ENABLED_DEBUG_SYNC;SAFE_MUTEX;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;MYSQL_DYNAMIC_PLUGIN;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;XCOM_HAVE_OPENSSL;CMAKE_INTDIR=\"Debug\";group_replication_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\group_replication\xdr_gen;E:\mysql\mysql-5.7.33\libbinlogevents\include;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\rpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include\sql_service;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql\gcs;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom;E:\mysql\win\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\group_replication\xdr_gen;E:\mysql\mysql-5.7.33\libbinlogevents\include;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\rpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include\sql_service;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql\gcs;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom;E:\mysql\win\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;..\..\..\archive_output_directory\Debug\mysqlservices.lib;..\..\..\sql\Debug\mysqld.lib;..\..\..\archive_output_directory\Debug\lz4_lib.lib;C:\Program Files\OpenSSL-Win64\lib\libssl.lib;C:\Program Files\OpenSSL-Win64\lib\libcrypto.lib;crypt32.lib;..\..\..\archive_output_directory\Debug\lz4_lib.lib;C:\Program Files\OpenSSL-Win64\lib\libssl.lib;C:\Program Files\OpenSSL-Win64\lib\libcrypto.lib;crypt32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/mysql/win/rapid/plugin/group_replication/Debug/group_replication.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/mysql/win/rapid/plugin/group_replication/Debug/group_replication.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\group_replication\xdr_gen;E:\mysql\mysql-5.7.33\libbinlogevents\include;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\rpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include\sql_service;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql\gcs;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom;E:\mysql\win\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;MYSQL_DYNAMIC_PLUGIN;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;XCOM_HAVE_OPENSSL;CMAKE_INTDIR="Release";group_replication_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;MYSQL_DYNAMIC_PLUGIN;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;XCOM_HAVE_OPENSSL;CMAKE_INTDIR=\"Release\";group_replication_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\group_replication\xdr_gen;E:\mysql\mysql-5.7.33\libbinlogevents\include;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\rpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include\sql_service;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql\gcs;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom;E:\mysql\win\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\group_replication\xdr_gen;E:\mysql\mysql-5.7.33\libbinlogevents\include;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\rpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include\sql_service;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql\gcs;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom;E:\mysql\win\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;..\..\..\archive_output_directory\Release\mysqlservices.lib;..\..\..\sql\Release\mysqld.lib;..\..\..\archive_output_directory\Release\lz4_lib.lib;C:\Program Files\OpenSSL-Win64\lib\libssl.lib;C:\Program Files\OpenSSL-Win64\lib\libcrypto.lib;crypt32.lib;..\..\..\archive_output_directory\Release\lz4_lib.lib;C:\Program Files\OpenSSL-Win64\lib\libssl.lib;C:\Program Files\OpenSSL-Win64\lib\libcrypto.lib;crypt32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/mysql/win/rapid/plugin/group_replication/Release/group_replication.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/mysql/win/rapid/plugin/group_replication/Release/group_replication.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\group_replication\xdr_gen;E:\mysql\mysql-5.7.33\libbinlogevents\include;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\rpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include\sql_service;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql\gcs;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom;E:\mysql\win\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;MYSQL_DYNAMIC_PLUGIN;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;XCOM_HAVE_OPENSSL;CMAKE_INTDIR="MinSizeRel";group_replication_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;MYSQL_DYNAMIC_PLUGIN;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;XCOM_HAVE_OPENSSL;CMAKE_INTDIR=\"MinSizeRel\";group_replication_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\group_replication\xdr_gen;E:\mysql\mysql-5.7.33\libbinlogevents\include;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\rpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include\sql_service;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql\gcs;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom;E:\mysql\win\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\group_replication\xdr_gen;E:\mysql\mysql-5.7.33\libbinlogevents\include;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\rpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include\sql_service;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql\gcs;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom;E:\mysql\win\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;..\..\..\archive_output_directory\MinSizeRel\mysqlservices.lib;..\..\..\sql\MinSizeRel\mysqld.lib;..\..\..\archive_output_directory\MinSizeRel\lz4_lib.lib;C:\Program Files\OpenSSL-Win64\lib\libssl.lib;C:\Program Files\OpenSSL-Win64\lib\libcrypto.lib;crypt32.lib;..\..\..\archive_output_directory\MinSizeRel\lz4_lib.lib;C:\Program Files\OpenSSL-Win64\lib\libssl.lib;C:\Program Files\OpenSSL-Win64\lib\libcrypto.lib;crypt32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/mysql/win/rapid/plugin/group_replication/MinSizeRel/group_replication.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/mysql/win/rapid/plugin/group_replication/MinSizeRel/group_replication.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\group_replication\xdr_gen;E:\mysql\mysql-5.7.33\libbinlogevents\include;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\rpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include\sql_service;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql\gcs;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom;E:\mysql\win\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;MYSQL_DYNAMIC_PLUGIN;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;XCOM_HAVE_OPENSSL;CMAKE_INTDIR="RelWithDebInfo";group_replication_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;MYSQL_DYNAMIC_PLUGIN;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;XCOM_HAVE_OPENSSL;CMAKE_INTDIR=\"RelWithDebInfo\";group_replication_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\group_replication\xdr_gen;E:\mysql\mysql-5.7.33\libbinlogevents\include;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\rpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include\sql_service;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql\gcs;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom;E:\mysql\win\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\group_replication\xdr_gen;E:\mysql\mysql-5.7.33\libbinlogevents\include;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\rpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include\sql_service;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql\gcs;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom;E:\mysql\win\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;..\..\..\archive_output_directory\RelWithDebInfo\mysqlservices.lib;..\..\..\sql\RelWithDebInfo\mysqld.lib;..\..\..\archive_output_directory\RelWithDebInfo\lz4_lib.lib;C:\Program Files\OpenSSL-Win64\lib\libssl.lib;C:\Program Files\OpenSSL-Win64\lib\libcrypto.lib;crypt32.lib;..\..\..\archive_output_directory\RelWithDebInfo\lz4_lib.lib;C:\Program Files\OpenSSL-Win64\lib\libssl.lib;C:\Program Files\OpenSSL-Win64\lib\libcrypto.lib;crypt32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/mysql/win/rapid/plugin/group_replication/RelWithDebInfo/group_replication.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/mysql/win/rapid/plugin/group_replication/RelWithDebInfo/group_replication.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\24d3279a9b5428c23c65dc14bc800465\xcom_vp.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating xdr_gen/xcom_vp.h, xdr_gen/xcom_vp_xdr.c, xdr_gen/xcom_vp_platform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_proto_enum.h E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_proto_enum.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_limits.h E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_limits.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp.h.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp_xdr.c.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp_xdr.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp_platform.h.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp_platform.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp.h.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_xdr.c.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_platform.h.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_proto_enum.h;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_limits.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp.h;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_xdr.c;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_platform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating xdr_gen/xcom_vp.h, xdr_gen/xcom_vp_xdr.c, xdr_gen/xcom_vp_platform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_proto_enum.h E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_proto_enum.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_limits.h E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_limits.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp.h.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp_xdr.c.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp_xdr.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp_platform.h.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp_platform.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp.h.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_xdr.c.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_platform.h.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_proto_enum.h;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_limits.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp.h;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_xdr.c;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_platform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating xdr_gen/xcom_vp.h, xdr_gen/xcom_vp_xdr.c, xdr_gen/xcom_vp_platform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_proto_enum.h E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_proto_enum.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_limits.h E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_limits.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp.h.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp_xdr.c.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp_xdr.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp_platform.h.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp_platform.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp.h.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_xdr.c.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_platform.h.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_proto_enum.h;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_limits.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp.h;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_xdr.c;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_platform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating xdr_gen/xcom_vp.h, xdr_gen/xcom_vp_xdr.c, xdr_gen/xcom_vp_platform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_proto_enum.h E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_proto_enum.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_limits.h E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_limits.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp.h.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp_xdr.c.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp_xdr.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp_platform.h.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp_platform.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp.h.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_xdr.c.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_platform.h.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_proto_enum.h;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_limits.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp.h;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_xdr.c;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_platform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/rapid/plugin/group_replication/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\configure.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\mysql_gcs.h.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\rpcgen.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\xcom.h.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\group_replication\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/rapid/plugin/group_replication/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\configure.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\mysql_gcs.h.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\rpcgen.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\xcom.h.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\group_replication\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/rapid/plugin/group_replication/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\configure.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\mysql_gcs.h.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\rpcgen.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\xcom.h.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\group_replication\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/rapid/plugin/group_replication/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\configure.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\mysql_gcs.h.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\rpcgen.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\xcom.h.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\group_replication\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\pax_msg.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_base.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_memory.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_str.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_cfg.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_cache.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_transport.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\node_address.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_msg_queue.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_statistics.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\app_data.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\site_def.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_ssl_transport.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_recover.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\task.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\bitset.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\simset.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\node_set.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_interface.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\node_list.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\task_debug.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\sock_probe.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\task_net.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\synode_no.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_detector.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\xdr_float.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\xdr_ref.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\xdr_array.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\xdr_sizeof.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\xdr_mem.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\xdr.c" />
+    <ClCompile Include="E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_xdr.c">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_logging.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\xplatform\my_xp_cond.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\xplatform\my_xp_thread.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\xplatform\my_xp_mutex.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\xplatform\my_xp_util.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_view.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_types.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_message.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_member_identifier.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\interface\gcs_group_identifier.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\gcs_interface_factory.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_communication_interface.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_control_interface.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_group_management.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_internal_message.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_networking.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_utils.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_state_exchange.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_group_member_information.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_message_stages.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_view_identifier.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_interface.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_notification.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_message_stage_lz4.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\gcs_xcom_statistics_interface.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\applier.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\auto_increment.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\certifier.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\channel_observation_manager.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\delayed_plugin_initialization.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\gcs_event_handlers.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\gcs_logger.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\gcs_operations.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\gcs_plugin_messages.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\gcs_view_modification_notifier.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\group_partition_handling.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\member_info.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\observer_server_actions.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\observer_server_channels.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\observer_server_state.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\observer_trans.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\pipeline_factory.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\pipeline_stats.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\plugin.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\plugin_psi.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\plugin_utils.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\ps_information.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\read_mode_handler.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\recovery.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\recovery_channel_state_observer.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\applier_channel_state_observer.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\asynchronous_channels_state_observer.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\recovery_message.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\recovery_state_transfer.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\replication_threads_api.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\single_primary_message.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\member_version.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\compatibility_module.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\handlers\applier_handler.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\handlers\certification_handler.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\handlers\event_cataloger.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\sql_service\sql_resultset.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\sql_service\sql_service_context.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\sql_service\sql_service_context_base.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\sql_service\sql_service_interface.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\sql_service\sql_command_test.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\src\sql_service\sql_service_command.cc" />
+    <ResourceCompile Include="E:\mysql\win\versioninfo_dll.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\mysql\win\ZERO_CHECK.vcxproj">
+      <Project>{B584D885-F4E3-3C53-87CE-DB7650C6F37C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\GenError.vcxproj">
+      <Project>{1646E8D2-EEAA-3B10-A0C2-72DAFC9AD060}</Project>
+      <Name>GenError</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\lz4_lib.vcxproj">
+      <Project>{F6D8720E-5A53-3227-A9ED-B80A7E322A76}</Project>
+      <Name>lz4_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\mysqld.vcxproj">
+      <Project>{46F27060-8B60-3C50-A8AF-BE3DD3A2BBE1}</Project>
+      <Name>mysqld</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libservices\mysqlservices.vcxproj">
+      <Project>{3D32B18C-E16A-38D9-ADD4-A43C74228CE2}</Project>
+      <Name>mysqlservices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

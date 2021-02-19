@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+E:/mysql/mysql-5.7.33/client/base/CMakeLists.txt
+E:/mysql/mysql-5.7.33/cmake/compile_flags.cmake
+E:/mysql/mysql-5.7.33/cmake/save_archive_location.cmake.in

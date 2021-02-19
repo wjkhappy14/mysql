@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+E:/mysql/mysql-5.7.33/plugin/rewriter/CMakeLists.txt
+E:/mysql/mysql-5.7.33/plugin/rewriter/install_rewriter.sql.in
+E:/mysql/mysql-5.7.33/plugin/rewriter/uninstall_rewriter.sql.in

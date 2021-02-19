@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx.proto.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_datatypes.proto.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_connection.proto.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_expect.proto.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_expr.proto.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_crud.proto.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_sql.proto.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_session.proto.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_notice.proto.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_resultset.proto.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\d081cfff6e43a6fbf1ab909121a37921\GenLiteProtos.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\mysql\win\rapid\plugin\x\CMakeFiles\GenLiteProtos" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{02E1C3A9-D35B-39DD-A407-43464815AC39}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

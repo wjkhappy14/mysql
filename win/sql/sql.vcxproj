@@ -1,0 +1,707 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6AD2635E-4D7D-3E36-8585-D299C2015485}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>sql</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\archive_output_directory\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sql.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sql</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\archive_output_directory\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sql.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sql</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\archive_output_directory\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sql.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sql</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\archive_output_directory\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sql.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sql</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql\conn_handler;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;C:\Program Files\OpenSSL-Win64\include;E:\mysql\win\sql;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\include\boost_1_59_0\patches;D:\BOOST\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ENABLED_DEBUG_SYNC;SAFE_MUTEX;_VARIADIC_MAX=10;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;MYSQL_SERVER;HAVE_REPLICATION;AUTHENTICATION_WIN;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ENABLED_DEBUG_SYNC;SAFE_MUTEX;_VARIADIC_MAX=10;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;MYSQL_SERVER;HAVE_REPLICATION;AUTHENTICATION_WIN;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql\conn_handler;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;C:\Program Files\OpenSSL-Win64\include;E:\mysql\win\sql;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\include\boost_1_59_0\patches;D:\BOOST\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql\conn_handler;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;C:\Program Files\OpenSSL-Win64\include;E:\mysql\win\sql;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\include\boost_1_59_0\patches;D:\BOOST\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DTARGET_NAME=sql -DTARGET_LOC=E:/mysql/win/archive_output_directory/Debug/sql.lib -DCFG_INTDIR=$(Configuration) -P E:/mysql/win/archive_output_directory/lib_location_sql.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql\conn_handler;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;C:\Program Files\OpenSSL-Win64\include;E:\mysql\win\sql;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\include\boost_1_59_0\patches;D:\BOOST\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;_VARIADIC_MAX=10;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;MYSQL_SERVER;HAVE_REPLICATION;AUTHENTICATION_WIN;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;_VARIADIC_MAX=10;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;MYSQL_SERVER;HAVE_REPLICATION;AUTHENTICATION_WIN;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql\conn_handler;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;C:\Program Files\OpenSSL-Win64\include;E:\mysql\win\sql;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\include\boost_1_59_0\patches;D:\BOOST\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql\conn_handler;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;C:\Program Files\OpenSSL-Win64\include;E:\mysql\win\sql;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\include\boost_1_59_0\patches;D:\BOOST\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DTARGET_NAME=sql -DTARGET_LOC=E:/mysql/win/archive_output_directory/Release/sql.lib -DCFG_INTDIR=$(Configuration) -P E:/mysql/win/archive_output_directory/lib_location_sql.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql\conn_handler;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;C:\Program Files\OpenSSL-Win64\include;E:\mysql\win\sql;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\include\boost_1_59_0\patches;D:\BOOST\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;_VARIADIC_MAX=10;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;MYSQL_SERVER;HAVE_REPLICATION;AUTHENTICATION_WIN;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;_VARIADIC_MAX=10;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;MYSQL_SERVER;HAVE_REPLICATION;AUTHENTICATION_WIN;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql\conn_handler;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;C:\Program Files\OpenSSL-Win64\include;E:\mysql\win\sql;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\include\boost_1_59_0\patches;D:\BOOST\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql\conn_handler;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;C:\Program Files\OpenSSL-Win64\include;E:\mysql\win\sql;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\include\boost_1_59_0\patches;D:\BOOST\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DTARGET_NAME=sql -DTARGET_LOC=E:/mysql/win/archive_output_directory/MinSizeRel/sql.lib -DCFG_INTDIR=$(Configuration) -P E:/mysql/win/archive_output_directory/lib_location_sql.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql\conn_handler;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;C:\Program Files\OpenSSL-Win64\include;E:\mysql\win\sql;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\include\boost_1_59_0\patches;D:\BOOST\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;_VARIADIC_MAX=10;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;MYSQL_SERVER;HAVE_REPLICATION;AUTHENTICATION_WIN;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;_VARIADIC_MAX=10;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;MYSQL_SERVER;HAVE_REPLICATION;AUTHENTICATION_WIN;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql\conn_handler;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;C:\Program Files\OpenSSL-Win64\include;E:\mysql\win\sql;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\include\boost_1_59_0\patches;D:\BOOST\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql\conn_handler;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;C:\Program Files\OpenSSL-Win64\include;E:\mysql\win\sql;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\include\boost_1_59_0\patches;D:\BOOST\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DTARGET_NAME=sql -DTARGET_LOC=E:/mysql/win/archive_output_directory/RelWithDebInfo/sql.lib -DCFG_INTDIR=$(Configuration) -P E:/mysql/win/archive_output_directory/lib_location_sql.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\mysql-5.7.33\sql\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/sql/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/sql/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\mysql-5.7.33\cmake\bison.cmake;E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\cmake\make_dist.cmake.in;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\sql\sql_hints.yy.cc;E:\mysql\mysql-5.7.33\sql\sql_hints.yy.h;E:\mysql\mysql-5.7.33\sql\sql_yacc.cc;E:\mysql\mysql-5.7.33\sql\sql_yacc.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\sql\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/sql/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/sql/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\mysql-5.7.33\cmake\bison.cmake;E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\cmake\make_dist.cmake.in;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\sql\sql_hints.yy.cc;E:\mysql\mysql-5.7.33\sql\sql_hints.yy.h;E:\mysql\mysql-5.7.33\sql\sql_yacc.cc;E:\mysql\mysql-5.7.33\sql\sql_yacc.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\sql\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/sql/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/sql/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\mysql-5.7.33\cmake\bison.cmake;E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\cmake\make_dist.cmake.in;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\sql\sql_hints.yy.cc;E:\mysql\mysql-5.7.33\sql\sql_hints.yy.h;E:\mysql\mysql-5.7.33\sql\sql_yacc.cc;E:\mysql\mysql-5.7.33\sql\sql_yacc.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\sql\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/sql/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/sql/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\mysql-5.7.33\cmake\bison.cmake;E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\cmake\make_dist.cmake.in;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\sql\sql_hints.yy.cc;E:\mysql\mysql-5.7.33\sql\sql_hints.yy.h;E:\mysql\mysql-5.7.33\sql\sql_yacc.cc;E:\mysql\mysql-5.7.33\sql\sql_yacc.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\sql\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\mysql\win\sql\sql_yacc.h" />
+    <ClCompile Include="E:\mysql\win\sql\sql_yacc.cc" />
+    <ClInclude Include="E:\mysql\win\sql\sql_hints.yy.h" />
+    <ClCompile Include="E:\mysql\win\sql\sql_hints.yy.cc" />
+    <ClInclude Include="E:\mysql\win\sql\lex_hash.h" />
+    <ClInclude Include="E:\mysql\win\sql\lex_token.h" />
+    <ClCompile Include="E:\mysql\win\sql\sql_builtin.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\abstract_query_plan.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\auth\sql_authentication.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\auth\sql_auth_cache.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\auth\sql_authorization.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\auth\sql_user_table.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\auth\sql_user.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\auth\password.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\auth\password_policy_service.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\auth\sql_security_ctx.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\auth\service_security_context.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\keyring_service.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\ssl_wrapper_service.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\bootstrap.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\conn_handler\connection_handler_manager.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\datadict.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\debug_sync.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\derror.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\discover.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\field.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\field_conv.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\filesort.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\filesort_utils.cc">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) -fno-builtin-memcmp</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) -fno-builtin-memcmp</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) -fno-builtin-memcmp</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) -fno-builtin-memcmp</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\aggregate_check.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\geometry_rtree.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\gstream.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\handler.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\hostname.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\init.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_buff.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_cmpfunc.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_create.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_func.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_geofunc.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_geofunc_buffer.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_geofunc_internal.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_geofunc_relchecks.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_geofunc_relchecks_bgwrap.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_geofunc_setops.cc">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_json_func.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_row.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_strfunc.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_subselect.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_sum.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_timefunc.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_xmlfunc.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\item_inetfunc.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\json_dom.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\json_binary.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\json_path.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\key.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\keycaches.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\lock.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\locking_service.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\locks\shared_spin_lock.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\log.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\mdl.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\migrate_keyring.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\my_decimal.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\net_serv.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\opt_costconstantcache.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\opt_costconstants.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\opt_costmodel.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\opt_explain.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\opt_explain_traditional.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\opt_explain_json.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\opt_hints.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\opt_range.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\opt_statistics.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\opt_sum.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\opt_trace.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\opt_trace2server.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\parse_file.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\parse_tree_helpers.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\parse_tree_hints.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\parse_tree_items.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\parse_tree_node_base.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\parse_tree_nodes.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\select_lex_visitor.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\parser_service.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\partition_info.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\partitioning\partition_handler.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\procedure.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\protocol_classic.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\records.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_group_replication.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_handler.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_transaction_ctx.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_transaction_write_set_ctx.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_trx_tracking.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rpl_write_set_handler.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\rules_table_service.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\session_tracker.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\set_var.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sp.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sp_cache.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sp_head.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sp_instr.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sp_pcontext.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sp_rcontext.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\spatial.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\string_service.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_admin.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_alloc_error_handler.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_alter.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_alter_instance.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_analyse.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_base.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_bootstrap.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_initialize.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_cache.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_class.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_connect.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_crypt.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_cursor.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_data_change.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_db.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_delete.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_derived.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_digest.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_do.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_error.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_exception_handler.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_executor.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_get_diagnostics.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_handler.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_help.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_insert.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_join_buffer.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_lex.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_lex_hash.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_lex_hints.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_list.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_load.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_locale.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_manager.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_optimizer.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_parse.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_partition.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_partition_admin.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_planner.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_plugin.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_prepare.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_profile.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_query_rewrite.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_reload.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_rename.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_resolver.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_rewrite.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_select.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_servers.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_show.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_show_status.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_signal.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_state.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_table.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_tablespace.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_test.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_thd_internal_api.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_time.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_timer.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_tmp_table.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_trigger.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_truncate.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_udf.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_union.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_update.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_view.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\strfunc.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sys_vars.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sys_vars_resource_mgr.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\table.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\table_cache.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\table_trigger_dispatcher.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\tc_log.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\thr_malloc.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\transaction.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\transaction_info.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\trigger.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\trigger_creation_ctx.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\trigger_loader.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\trigger_chain.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\tztime.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\uniques.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\unireg.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\xa.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\extra\lz4\xxhash.c">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">XXH_NAMESPACE=MY_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">XXH_NAMESPACE=MY_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">XXH_NAMESPACE=MY_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">XXH_NAMESPACE=MY_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\libmysql\errmsg.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql-common\client.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql-common\client_plugin.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql-common\get_password.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql-common\my_path_permissions.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql-common\my_time.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql-common\my_user.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql-common\pack.c" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql-common\client_authentication.cc">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">HAVE_OPENSSL_APPLINK_C;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">HAVE_OPENSSL_APPLINK_C;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">HAVE_OPENSSL_APPLINK_C;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">HAVE_OPENSSL_APPLINK_C;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql-common\sql_string.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\command_service.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\conn_handler\channel_info.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\conn_handler\connection_handler_per_thread.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\conn_handler\connection_handler_one_thread.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\conn_handler\socket_connection.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\des_key_file.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\event_data_objects.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\event_db_repository.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\event_parse_data.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\event_queue.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\event_scheduler.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\events.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\mf_iocache.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\mysqld.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\mysqld_thd_manager.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\protocol_callback.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\signal_handler.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_audit.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\sql_client.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\srv_session.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\srv_session_info_service.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\srv_session_service.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\auth\sha2_password_common.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\named_pipe.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\conn_handler\named_pipe_connection.cc" />
+    <ClCompile Include="E:\mysql\mysql-5.7.33\sql\conn_handler\shared_memory_connection.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\mysql\win\ZERO_CHECK.vcxproj">
+      <Project>{B584D885-F4E3-3C53-87CE-DB7650C6F37C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\scripts\GenBootstrapPriv.vcxproj">
+      <Project>{F908CD32-95B0-3D6D-A336-5614DB760C8F}</Project>
+      <Name>GenBootstrapPriv</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\GenDigestServerSource.vcxproj">
+      <Project>{9265FE82-A17E-3FBE-94C4-1179801629EF}</Project>
+      <Name>GenDigestServerSource</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\GenError.vcxproj">
+      <Project>{1646E8D2-EEAA-3B10-A0C2-72DAFC9AD060}</Project>
+      <Name>GenError</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\GenServerSource.vcxproj">
+      <Project>{21B87259-A5B4-36AF-A6A8-90914DA9420A}</Project>
+      <Name>GenServerSource</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\scripts\GenSysSchema.vcxproj">
+      <Project>{9FB6B851-C7CE-3CFC-90EC-0D35D9B179F5}</Project>
+      <Name>GenSysSchema</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\archive\archive.vcxproj">
+      <Project>{6AE0E3D2-06FB-3CE1-8AB7-65CECFE5020D}</Project>
+      <Name>archive</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libmysql\authentication_win\auth_win_client.vcxproj">
+      <Project>{56031BEE-118D-3620-8A8F-056FDE88D436}</Project>
+      <Name>auth_win_client</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libbinlogevents\src\binlogevents_static.vcxproj">
+      <Project>{4FFE80BD-B075-381D-ACBD-A4E0841B7D1B}</Project>
+      <Name>binlogevents_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\blackhole\blackhole.vcxproj">
+      <Project>{DB006AE9-A187-3038-97FD-3D58FA23A3BC}</Project>
+      <Name>blackhole</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\csv\csv.vcxproj">
+      <Project>{96CDAFE2-DDFA-3B15-BB9A-977E5F9E9D24}</Project>
+      <Name>csv</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\dbug\dbug.vcxproj">
+      <Project>{2ED86B42-3F5D-36C7-8F8A-C180527B4582}</Project>
+      <Name>dbug</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\federated\federated.vcxproj">
+      <Project>{A229ADCB-73DA-3CCE-8960-4EA21E639587}</Project>
+      <Name>federated</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\gen_lex_hash.vcxproj">
+      <Project>{705DBFEF-E45D-3219-AA2A-CFC9A4F4692A}</Project>
+      <Name>gen_lex_hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\gen_lex_token.vcxproj">
+      <Project>{7F6C23D4-9BF0-3B6E-86D9-412DFFDA3D7F}</Project>
+      <Name>gen_lex_token</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\heap\heap.vcxproj">
+      <Project>{0F42567A-9FD8-36DA-B314-8B4A59CB9AA4}</Project>
+      <Name>heap</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\innobase\innobase.vcxproj">
+      <Project>{6746C6E7-6281-3472-A771-D7781513B35E}</Project>
+      <Name>innobase</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\lz4_lib.vcxproj">
+      <Project>{F6D8720E-5A53-3227-A9ED-B80A7E322A76}</Project>
+      <Name>lz4_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\myisam\myisam.vcxproj">
+      <Project>{B0AFAB73-239A-38ED-8D1D-73FAF36C6DEB}</Project>
+      <Name>myisam</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\myisammrg\myisammrg.vcxproj">
+      <Project>{861C3C3A-A6AF-3907-BFB4-CE78FF9FD878}</Project>
+      <Name>myisammrg</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\mysys_ssl\mysys_ssl.vcxproj">
+      <Project>{408604CE-0631-3C50-99E9-BB2BE0F05956}</Project>
+      <Name>mysys_ssl</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\plugin\fulltext\ngram_parser.vcxproj">
+      <Project>{A9AB16E0-1176-301F-B7CF-0670C68E1B20}</Project>
+      <Name>ngram_parser</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\partition\partition.vcxproj">
+      <Project>{BF6A5E4B-ACFA-314B-988B-7F24DE500A60}</Project>
+      <Name>partition</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\storage\perfschema\perfschema.vcxproj">
+      <Project>{4568155F-2CB6-3219-B469-B46025538EE2}</Project>
+      <Name>perfschema</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\regex\regex.vcxproj">
+      <Project>{BFCC9E34-4810-3108-8764-9D8BD0AA607F}</Project>
+      <Name>regex</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\strings\strings.vcxproj">
+      <Project>{EAA77626-0230-3057-8B78-4AA35C676FA1}</Project>
+      <Name>strings</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\vio\vio.vcxproj">
+      <Project>{06651924-7EDE-3C99-B5A4-5CC95C0A9A92}</Project>
+      <Name>vio</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\zlib\zlib.vcxproj">
+      <Project>{DBF2F168-6899-38B9-84E7-4811A2A78621}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

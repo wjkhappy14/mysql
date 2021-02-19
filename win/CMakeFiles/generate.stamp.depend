@@ -1,0 +1,104 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.19/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CMakeConfigurableFile.in
+C:/Program Files/CMake/share/cmake-3.19/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CMakePushCheckState.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckCSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckCXXSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckFunctionExists.c
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckStructHasMember.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckTypeSize.c.in
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/Internal/CheckCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/Internal/CheckSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/TestBigEndian.cmake
+C:/Program Files/CMake/share/cmake-3.19/Templates/CPackConfig.cmake.in
+E:/mysql/mysql-5.7.33/CMakeLists.txt
+E:/mysql/mysql-5.7.33/VERSION
+E:/mysql/mysql-5.7.33/cmake/abi_check.cmake
+E:/mysql/mysql-5.7.33/cmake/boost.cmake
+E:/mysql/mysql-5.7.33/cmake/build_configurations/compiler_options.cmake
+E:/mysql/mysql-5.7.33/cmake/build_configurations/feature_set.cmake
+E:/mysql/mysql-5.7.33/cmake/character_sets.cmake
+E:/mysql/mysql-5.7.33/cmake/cmake_parse_arguments.cmake
+E:/mysql/mysql-5.7.33/cmake/compile_flags.cmake
+E:/mysql/mysql-5.7.33/cmake/compiler_bugs.cmake
+E:/mysql/mysql-5.7.33/cmake/cpack_source_ignore_files.cmake
+E:/mysql/mysql-5.7.33/cmake/cpu_info.cmake
+E:/mysql/mysql-5.7.33/cmake/curl.cmake
+E:/mysql/mysql-5.7.33/cmake/dtrace.cmake
+E:/mysql/mysql-5.7.33/cmake/floating_point.cmake
+E:/mysql/mysql-5.7.33/cmake/info_macros.cmake.in
+E:/mysql/mysql-5.7.33/cmake/install_layout.cmake
+E:/mysql/mysql-5.7.33/cmake/install_macros.cmake
+E:/mysql/mysql-5.7.33/cmake/ldap.cmake
+E:/mysql/mysql-5.7.33/cmake/libevent.cmake
+E:/mysql/mysql-5.7.33/cmake/libutils.cmake
+E:/mysql/mysql-5.7.33/cmake/lz4.cmake
+E:/mysql/mysql-5.7.33/cmake/maintainer.cmake
+E:/mysql/mysql-5.7.33/cmake/mysql_add_executable.cmake
+E:/mysql/mysql-5.7.33/cmake/mysql_version.cmake
+E:/mysql/mysql-5.7.33/cmake/os/Windows.cmake
+E:/mysql/mysql-5.7.33/cmake/os/WindowsCache.cmake
+E:/mysql/mysql-5.7.33/cmake/package_name.cmake
+E:/mysql/mysql-5.7.33/cmake/plugin.cmake
+E:/mysql/mysql-5.7.33/cmake/protobuf.cmake
+E:/mysql/mysql-5.7.33/cmake/readline.cmake
+E:/mysql/mysql-5.7.33/cmake/rpc.cmake
+E:/mysql/mysql-5.7.33/cmake/sasl.cmake
+E:/mysql/mysql-5.7.33/cmake/save_archive_location.cmake.in
+E:/mysql/mysql-5.7.33/cmake/ssl.cmake
+E:/mysql/mysql-5.7.33/cmake/tags.cmake
+E:/mysql/mysql-5.7.33/cmake/versioninfo.rc.in
+E:/mysql/mysql-5.7.33/cmake/zlib.cmake
+E:/mysql/mysql-5.7.33/config.h.cmake
+E:/mysql/mysql-5.7.33/configure.cmake
+E:/mysql/mysql-5.7.33/include/mysql_version.h.in
+E:/mysql/mysql-5.7.33/sql/sql_builtin.cc.in
+E:/mysql/win/CMakeFiles/3.19.3/CMakeCCompiler.cmake
+E:/mysql/win/CMakeFiles/3.19.3/CMakeCXXCompiler.cmake
+E:/mysql/win/CMakeFiles/3.19.3/CMakeRCCompiler.cmake
+E:/mysql/win/CMakeFiles/3.19.3/CMakeSystem.cmake
+E:/mysql/win/CMakeFiles/CheckIncludeFiles/HAVE_CRYPT_H.c
+E:/mysql/win/CMakeFiles/CheckIncludeFiles/HAVE_NUMAIF_H.c
+E:/mysql/win/CMakeFiles/CheckIncludeFiles/HAVE_NUMA_H.c
+E:/mysql/win/CMakeFiles/CheckIncludeFiles/HAVE_SASL_SASL_H.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/SIZEOF_IN6_ADDR.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/SIZEOF_SOCKADDR_IN6.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/SIZEOF_SOCKLEN_T.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/STRUCT_TIMESPEC.c
+E:/mysql/win/find_libevent_version.c
+E:/mysql/win/info_macros.cmake

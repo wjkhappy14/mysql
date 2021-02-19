@@ -1,0 +1,57 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.19/Modules/CMakeConfigurableFile.in
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFile.c.in
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckStructHasMember.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckTypeSize.c.in
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckVariableExists.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/FindPackageMessage.cmake
+E:/mysql/mysql-5.7.33/extra/libevent/libevent-2.1.11-stable/CMakeLists.txt
+E:/mysql/mysql-5.7.33/extra/libevent/libevent-2.1.11-stable/cmake/AddCompilerFlags.cmake
+E:/mysql/mysql-5.7.33/extra/libevent/libevent-2.1.11-stable/cmake/CheckConstExists.cmake
+E:/mysql/mysql-5.7.33/extra/libevent/libevent-2.1.11-stable/cmake/CheckFileOffsetBits.cmake
+E:/mysql/mysql-5.7.33/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+E:/mysql/mysql-5.7.33/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.cmake
+E:/mysql/mysql-5.7.33/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionKeywords.cmake
+E:/mysql/mysql-5.7.33/extra/libevent/libevent-2.1.11-stable/cmake/CheckPrototypeDefinition.cmake
+E:/mysql/mysql-5.7.33/extra/libevent/libevent-2.1.11-stable/cmake/FindGit.cmake
+E:/mysql/mysql-5.7.33/extra/libevent/libevent-2.1.11-stable/cmake/VersionViaGit.cmake
+E:/mysql/mysql-5.7.33/extra/libevent/libevent-2.1.11-stable/evconfig-private.h.cmake
+E:/mysql/mysql-5.7.33/extra/libevent/libevent-2.1.11-stable/event-config.h.cmake
+E:/mysql/win/CMakeFiles/CheckIncludeFiles/EVENT__HAVE_IFADDRS_H.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__HAVE_FD_MASK.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__HAVE_SA_FAMILY_T.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__HAVE_STRUCT_ADDRINFO.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__HAVE_STRUCT_IN6_ADDR.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__HAVE_STRUCT_LINGER.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__HAVE_STRUCT_SOCKADDR_IN6.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__HAVE_STRUCT_SOCKADDR_STORAGE.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__HAVE_STRUCT_SOCKADDR_UN.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__HAVE_UINT16_T.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__HAVE_UINT32_T.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__HAVE_UINT64_T.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__HAVE_UINT8_T.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__HAVE_UINTPTR_T.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_INT.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_LONG.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_LONG_LONG.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_OFF_T.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_PID_T.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_PTHREAD_T.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_SHORT.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_SIZE_T.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_SOCKLEN_T.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_SSIZE_T_LOWER.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_SSIZE_T_UPPER.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_TIME_T.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_UNSIGNED.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_UNSIGNED_INT.c
+E:/mysql/win/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_VOID_P.c

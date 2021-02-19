@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BFF16E1E-9F07-30F6-BFAE-67C14896E465}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>gen_xcom_vp_c</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\group_replication\xdr_gen;E:\mysql\mysql-5.7.33\libbinlogevents\include;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\rpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include\sql_service;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql\gcs;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom;E:\mysql\win\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\group_replication\xdr_gen;E:\mysql\mysql-5.7.33\libbinlogevents\include;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\rpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include\sql_service;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql\gcs;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom;E:\mysql\win\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\group_replication\xdr_gen;E:\mysql\mysql-5.7.33\libbinlogevents\include;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\rpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include\sql_service;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql\gcs;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom;E:\mysql\win\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\group_replication\xdr_gen;E:\mysql\mysql-5.7.33\libbinlogevents\include;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\extra\lz4;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\windeps\sunrpc\rpc;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\include\sql_service;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\include\mysql\gcs;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom;E:\mysql\win\rapid\plugin\group_replication\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\24d3279a9b5428c23c65dc14bc800465\xcom_vp.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating xdr_gen/xcom_vp.h, xdr_gen/xcom_vp_xdr.c, xdr_gen/xcom_vp_platform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_proto_enum.h E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_proto_enum.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_limits.h E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_limits.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp.h.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp_xdr.c.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp_xdr.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp_platform.h.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp_platform.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp.h.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_xdr.c.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_platform.h.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_proto_enum.h;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_limits.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp.h;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_xdr.c;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_platform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating xdr_gen/xcom_vp.h, xdr_gen/xcom_vp_xdr.c, xdr_gen/xcom_vp_platform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_proto_enum.h E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_proto_enum.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_limits.h E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_limits.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp.h.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp_xdr.c.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp_xdr.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp_platform.h.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp_platform.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp.h.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_xdr.c.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_platform.h.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_proto_enum.h;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_limits.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp.h;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_xdr.c;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_platform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating xdr_gen/xcom_vp.h, xdr_gen/xcom_vp_xdr.c, xdr_gen/xcom_vp_platform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_proto_enum.h E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_proto_enum.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_limits.h E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_limits.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp.h.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp_xdr.c.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp_xdr.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp_platform.h.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp_platform.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp.h.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_xdr.c.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_platform.h.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_proto_enum.h;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_limits.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp.h;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_xdr.c;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_platform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating xdr_gen/xcom_vp.h, xdr_gen/xcom_vp_xdr.c, xdr_gen/xcom_vp_platform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_proto_enum.h E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_proto_enum.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_limits.h E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_limits.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp.h.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp_xdr.c.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp_xdr.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/libmysqlgcs/src/bindings/xcom/xcom//xcom_vp_platform.h.gen E:/mysql/win/rapid/plugin/group_replication/xdr_gen/xcom_vp_platform.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp.h.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_xdr.c.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_vp_platform.h.gen;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_proto_enum.h;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\libmysqlgcs\src\bindings\xcom\xcom\xcom_limits.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp.h;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_xdr.c;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_platform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\dbb31be76dddb0b10b89944af2e2bd37\gen_xcom_vp_c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp.h;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_xdr.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\group_replication\CMakeFiles\gen_xcom_vp_c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp.h;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_xdr.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\group_replication\CMakeFiles\gen_xcom_vp_c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp.h;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_xdr.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\group_replication\CMakeFiles\gen_xcom_vp_c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp.h;E:\mysql\win\rapid\plugin\group_replication\xdr_gen\xcom_vp_xdr.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\group_replication\CMakeFiles\gen_xcom_vp_c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/rapid/plugin/group_replication/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\configure.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\mysql_gcs.h.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\rpcgen.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\xcom.h.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\group_replication\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/rapid/plugin/group_replication/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\configure.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\mysql_gcs.h.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\rpcgen.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\xcom.h.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\group_replication\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/rapid/plugin/group_replication/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\configure.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\mysql_gcs.h.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\rpcgen.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\xcom.h.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\group_replication\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/rapid/plugin/group_replication/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\cmake\save_archive_location.cmake.in;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\configure.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\mysql_gcs.h.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\rpcgen.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\group_replication\xcom.h.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\group_replication\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\mysql\win\rapid\plugin\group_replication\CMakeFiles\gen_xcom_vp_c">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\mysql\win\ZERO_CHECK.vcxproj">
+      <Project>{B584D885-F4E3-3C53-87CE-DB7650C6F37C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

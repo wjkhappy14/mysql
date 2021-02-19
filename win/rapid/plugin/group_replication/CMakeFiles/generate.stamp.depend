@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckSymbolExists.cmake
+E:/mysql/mysql-5.7.33/cmake/compile_flags.cmake
+E:/mysql/mysql-5.7.33/cmake/save_archive_location.cmake.in
+E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/CMakeLists.txt
+E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/configure.cmake
+E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/mysql_gcs.h.cmake
+E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/rpcgen.cmake
+E:/mysql/mysql-5.7.33/rapid/plugin/group_replication/xcom.h.cmake

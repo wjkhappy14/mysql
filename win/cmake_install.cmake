@@ -1,0 +1,136 @@
+# Install script for directory: E:/mysql/mysql-5.7.33
+
+# Set the install prefix
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files/MySQL")
+endif()
+string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
+
+# Set the install configuration name.
+if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
+  if(BUILD_TYPE)
+    string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
+           CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
+  else()
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+  endif()
+  message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
+endif()
+
+# Set the component getting installed.
+if(NOT CMAKE_INSTALL_COMPONENT)
+  if(COMPONENT)
+    message(STATUS "Install component: \"${COMPONENT}\"")
+    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")
+  else()
+    set(CMAKE_INSTALL_COMPONENT)
+  endif()
+endif()
+
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xReadmex" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES
+    "E:/mysql/mysql-5.7.33/README"
+    "E:/mysql/mysql-5.7.33/LICENSE"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/docs" TYPE FILE FILES
+    "E:/mysql/win/Docs/INFO_SRC"
+    "E:/mysql/win/Docs/INFO_BIN"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xDocumentationx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/docs" TYPE DIRECTORY FILES "E:/mysql/mysql-5.7.33/Docs/" REGEX "/makefile\\.[^/]*$" EXCLUDE REGEX "/glibc[^/]*$" EXCLUDE REGEX "/linuxthreads\\.txt$" EXCLUDE REGEX "/myisam\\.txt$" EXCLUDE REGEX "/mysql\\.info$" EXCLUDE REGEX "/sp\\-imp\\-spec\\.txt$" EXCLUDE)
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("E:/mysql/win/zlib/cmake_install.cmake")
+  include("E:/mysql/win/extra/libevent/libevent-2.1.11-stable/cmake_install.cmake")
+  include("E:/mysql/win/extra/protobuf/cmake_install.cmake")
+  include("E:/mysql/win/include/cmake_install.cmake")
+  include("E:/mysql/win/dbug/cmake_install.cmake")
+  include("E:/mysql/win/strings/cmake_install.cmake")
+  include("E:/mysql/win/vio/cmake_install.cmake")
+  include("E:/mysql/win/regex/cmake_install.cmake")
+  include("E:/mysql/win/mysys/cmake_install.cmake")
+  include("E:/mysql/win/mysys_ssl/cmake_install.cmake")
+  include("E:/mysql/win/libmysql/cmake_install.cmake")
+  include("E:/mysql/win/libbinlogevents/cmake_install.cmake")
+  include("E:/mysql/win/libbinlogstandalone/cmake_install.cmake")
+  include("E:/mysql/win/storage/archive/cmake_install.cmake")
+  include("E:/mysql/win/storage/blackhole/cmake_install.cmake")
+  include("E:/mysql/win/storage/csv/cmake_install.cmake")
+  include("E:/mysql/win/storage/example/cmake_install.cmake")
+  include("E:/mysql/win/storage/federated/cmake_install.cmake")
+  include("E:/mysql/win/storage/heap/cmake_install.cmake")
+  include("E:/mysql/win/storage/innobase/cmake_install.cmake")
+  include("E:/mysql/win/storage/myisam/cmake_install.cmake")
+  include("E:/mysql/win/storage/myisammrg/cmake_install.cmake")
+  include("E:/mysql/win/storage/ndb/cmake_install.cmake")
+  include("E:/mysql/win/storage/partition/cmake_install.cmake")
+  include("E:/mysql/win/storage/perfschema/cmake_install.cmake")
+  include("E:/mysql/win/plugin/audit_null/cmake_install.cmake")
+  include("E:/mysql/win/plugin/auth/cmake_install.cmake")
+  include("E:/mysql/win/plugin/connection_control/cmake_install.cmake")
+  include("E:/mysql/win/plugin/daemon_example/cmake_install.cmake")
+  include("E:/mysql/win/plugin/fulltext/cmake_install.cmake")
+  include("E:/mysql/win/plugin/innodb_memcached/cmake_install.cmake")
+  include("E:/mysql/win/plugin/keyring/cmake_install.cmake")
+  include("E:/mysql/win/plugin/password_validation/cmake_install.cmake")
+  include("E:/mysql/win/plugin/replication_observers_example/cmake_install.cmake")
+  include("E:/mysql/win/plugin/rewrite_example/cmake_install.cmake")
+  include("E:/mysql/win/plugin/rewriter/cmake_install.cmake")
+  include("E:/mysql/win/plugin/semisync/cmake_install.cmake")
+  include("E:/mysql/win/plugin/test_service_sql_api/cmake_install.cmake")
+  include("E:/mysql/win/plugin/test_services/cmake_install.cmake")
+  include("E:/mysql/win/plugin/udf_services/cmake_install.cmake")
+  include("E:/mysql/win/plugin/version_token/cmake_install.cmake")
+  include("E:/mysql/win/rapid/plugin/group_replication/cmake_install.cmake")
+  include("E:/mysql/win/rapid/plugin/keyring_udf/cmake_install.cmake")
+  include("E:/mysql/win/rapid/plugin/x/cmake_install.cmake")
+  include("E:/mysql/win/unittest/cmake_install.cmake")
+  include("E:/mysql/win/unittest/examples/cmake_install.cmake")
+  include("E:/mysql/win/unittest/mytap/cmake_install.cmake")
+  include("E:/mysql/win/unittest/mytap/t/cmake_install.cmake")
+  include("E:/mysql/win/rapid/unittest/gunit/cmake_install.cmake")
+  include("E:/mysql/win/extra/cmake_install.cmake")
+  include("E:/mysql/win/client/cmake_install.cmake")
+  include("E:/mysql/win/sql/share/cmake_install.cmake")
+  include("E:/mysql/win/libservices/cmake_install.cmake")
+  include("E:/mysql/win/testclients/cmake_install.cmake")
+  include("E:/mysql/win/sql/cmake_install.cmake")
+  include("E:/mysql/win/libmysqld/cmake_install.cmake")
+  include("E:/mysql/win/libmysqld/examples/cmake_install.cmake")
+  include("E:/mysql/win/scripts/cmake_install.cmake")
+  include("E:/mysql/win/mysql-test/cmake_install.cmake")
+  include("E:/mysql/win/mysql-test/lib/My/SafeProcess/cmake_install.cmake")
+  include("E:/mysql/win/support-files/cmake_install.cmake")
+  include("E:/mysql/win/packaging/rpm-common/cmake_install.cmake")
+  include("E:/mysql/win/packaging/rpm-oel/cmake_install.cmake")
+  include("E:/mysql/win/packaging/rpm-fedora/cmake_install.cmake")
+  include("E:/mysql/win/packaging/rpm-sles/cmake_install.cmake")
+  include("E:/mysql/win/packaging/rpm-docker/cmake_install.cmake")
+  include("E:/mysql/win/packaging/deb-in/cmake_install.cmake")
+  include("E:/mysql/win/packaging/WiX/cmake_install.cmake")
+  include("E:/mysql/win/packaging/solaris/cmake_install.cmake")
+
+endif()
+
+if(CMAKE_INSTALL_COMPONENT)
+  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
+else()
+  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
+endif()
+
+string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+       "${CMAKE_INSTALL_MANIFEST_FILES}")
+file(WRITE "E:/mysql/win/${CMAKE_INSTALL_MANIFEST}"
+     "${CMAKE_INSTALL_MANIFEST_CONTENT}")

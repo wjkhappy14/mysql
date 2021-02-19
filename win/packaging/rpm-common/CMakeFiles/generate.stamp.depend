@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+E:/mysql/mysql-5.7.33/packaging/rpm-common/CMakeLists.txt
+E:/mysql/mysql-5.7.33/packaging/rpm-common/filter-provides.sh
+E:/mysql/mysql-5.7.33/packaging/rpm-common/filter-requires.sh
+E:/mysql/mysql-5.7.33/packaging/rpm-common/my.cnf.in
+E:/mysql/mysql-5.7.33/packaging/rpm-common/my_config.h
+E:/mysql/mysql-5.7.33/packaging/rpm-common/mysql.logrotate.in
+E:/mysql/mysql-5.7.33/packaging/rpm-common/mysql_config.sh

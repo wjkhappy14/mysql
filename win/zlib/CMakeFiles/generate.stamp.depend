@@ -1,0 +1,12 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFile.c.in
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckTypeSize.c.in
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckTypeSize.cmake
+E:/mysql/mysql-5.7.33/cmake/save_archive_location.cmake.in
+E:/mysql/mysql-5.7.33/zlib/CMakeLists.txt
+E:/mysql/mysql-5.7.33/zlib/zconf.h.cmakein
+E:/mysql/win/CMakeFiles/CheckTypeSize/OFF64_T.c

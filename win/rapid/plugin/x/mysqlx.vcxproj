@@ -1,0 +1,1511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8480A5C7-0305-374A-8A4F-2DED00ED58B4}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>mysqlx</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mysqlx.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mysqlx</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mysqlx.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mysqlx</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mysqlx.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mysqlx</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mysqlx.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mysqlx</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\protocol\errors;E:\mysql\mysql-5.7.33\rapid\plugin\x\src;E:\mysql\mysql-5.7.33\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\rapid\plugin\x\include\mysql;E:\mysql\win\rapid\plugin\x\generated;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlxtest_src\common;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\extra\protobuf\protobuf-2.6.1\src;D:\BOOST\boost_1_59_0;E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\include;E:\mysql\win\extra\libevent\libevent-2.1.11-stable\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ENABLED_DEBUG_SYNC;SAFE_MUTEX;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;MYSQL_DYNAMIC_PLUGIN;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;BOOST_ALL_NO_LIB;BOOST_NO_AUTO_PTR;XPLUGIN_LOG_PROTOBUF;CMAKE_INTDIR="Debug";mysqlx_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ENABLED_DEBUG_SYNC;SAFE_MUTEX;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;MYSQL_DYNAMIC_PLUGIN;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;BOOST_ALL_NO_LIB;BOOST_NO_AUTO_PTR;XPLUGIN_LOG_PROTOBUF;CMAKE_INTDIR=\"Debug\";mysqlx_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\protocol\errors;E:\mysql\mysql-5.7.33\rapid\plugin\x\src;E:\mysql\mysql-5.7.33\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\rapid\plugin\x\include\mysql;E:\mysql\win\rapid\plugin\x\generated;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlxtest_src\common;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\extra\protobuf\protobuf-2.6.1\src;D:\BOOST\boost_1_59_0;E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\include;E:\mysql\win\extra\libevent\libevent-2.1.11-stable\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\protocol\errors;E:\mysql\mysql-5.7.33\rapid\plugin\x\src;E:\mysql\mysql-5.7.33\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\rapid\plugin\x\include\mysql;E:\mysql\win\rapid\plugin\x\generated;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlxtest_src\common;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\extra\protobuf\protobuf-2.6.1\src;D:\BOOST\boost_1_59_0;E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\include;E:\mysql\win\extra\libevent\libevent-2.1.11-stable\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;..\..\..\archive_output_directory\Debug\mysqlservices.lib;..\..\..\sql\Debug\mysqld.lib;..\..\..\archive_output_directory\Debug\protobuf-lite.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\Debug\event_core.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\Debug\event_extra.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\Debug\event_openssl.lib;..\..\..\archive_output_directory\Debug\protobuf-lite.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\Debug\event_core.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\Debug\event_extra.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\Debug\event_openssl.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\Debug\event_core.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/mysql/win/rapid/plugin/x/Debug/mysqlx.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/mysql/win/rapid/plugin/x/Debug/mysqlx.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\protocol\errors;E:\mysql\mysql-5.7.33\rapid\plugin\x\src;E:\mysql\mysql-5.7.33\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\rapid\plugin\x\include\mysql;E:\mysql\win\rapid\plugin\x\generated;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlxtest_src\common;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\extra\protobuf\protobuf-2.6.1\src;D:\BOOST\boost_1_59_0;E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\include;E:\mysql\win\extra\libevent\libevent-2.1.11-stable\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;MYSQL_DYNAMIC_PLUGIN;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;BOOST_ALL_NO_LIB;BOOST_NO_AUTO_PTR;XPLUGIN_LOG_PROTOBUF;CMAKE_INTDIR="Release";mysqlx_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;MYSQL_DYNAMIC_PLUGIN;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;BOOST_ALL_NO_LIB;BOOST_NO_AUTO_PTR;XPLUGIN_LOG_PROTOBUF;CMAKE_INTDIR=\"Release\";mysqlx_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\protocol\errors;E:\mysql\mysql-5.7.33\rapid\plugin\x\src;E:\mysql\mysql-5.7.33\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\rapid\plugin\x\include\mysql;E:\mysql\win\rapid\plugin\x\generated;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlxtest_src\common;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\extra\protobuf\protobuf-2.6.1\src;D:\BOOST\boost_1_59_0;E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\include;E:\mysql\win\extra\libevent\libevent-2.1.11-stable\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\protocol\errors;E:\mysql\mysql-5.7.33\rapid\plugin\x\src;E:\mysql\mysql-5.7.33\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\rapid\plugin\x\include\mysql;E:\mysql\win\rapid\plugin\x\generated;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlxtest_src\common;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\extra\protobuf\protobuf-2.6.1\src;D:\BOOST\boost_1_59_0;E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\include;E:\mysql\win\extra\libevent\libevent-2.1.11-stable\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;..\..\..\archive_output_directory\Release\mysqlservices.lib;..\..\..\sql\Release\mysqld.lib;..\..\..\archive_output_directory\Release\protobuf-lite.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\Release\event_core.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\Release\event_extra.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\Release\event_openssl.lib;..\..\..\archive_output_directory\Release\protobuf-lite.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\Release\event_core.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\Release\event_extra.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\Release\event_openssl.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\Release\event_core.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/mysql/win/rapid/plugin/x/Release/mysqlx.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/mysql/win/rapid/plugin/x/Release/mysqlx.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\protocol\errors;E:\mysql\mysql-5.7.33\rapid\plugin\x\src;E:\mysql\mysql-5.7.33\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\rapid\plugin\x\include\mysql;E:\mysql\win\rapid\plugin\x\generated;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlxtest_src\common;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\extra\protobuf\protobuf-2.6.1\src;D:\BOOST\boost_1_59_0;E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\include;E:\mysql\win\extra\libevent\libevent-2.1.11-stable\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;MYSQL_DYNAMIC_PLUGIN;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;BOOST_ALL_NO_LIB;BOOST_NO_AUTO_PTR;XPLUGIN_LOG_PROTOBUF;CMAKE_INTDIR="MinSizeRel";mysqlx_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;MYSQL_DYNAMIC_PLUGIN;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;BOOST_ALL_NO_LIB;BOOST_NO_AUTO_PTR;XPLUGIN_LOG_PROTOBUF;CMAKE_INTDIR=\"MinSizeRel\";mysqlx_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\protocol\errors;E:\mysql\mysql-5.7.33\rapid\plugin\x\src;E:\mysql\mysql-5.7.33\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\rapid\plugin\x\include\mysql;E:\mysql\win\rapid\plugin\x\generated;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlxtest_src\common;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\extra\protobuf\protobuf-2.6.1\src;D:\BOOST\boost_1_59_0;E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\include;E:\mysql\win\extra\libevent\libevent-2.1.11-stable\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\protocol\errors;E:\mysql\mysql-5.7.33\rapid\plugin\x\src;E:\mysql\mysql-5.7.33\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\rapid\plugin\x\include\mysql;E:\mysql\win\rapid\plugin\x\generated;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlxtest_src\common;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\extra\protobuf\protobuf-2.6.1\src;D:\BOOST\boost_1_59_0;E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\include;E:\mysql\win\extra\libevent\libevent-2.1.11-stable\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;..\..\..\archive_output_directory\MinSizeRel\mysqlservices.lib;..\..\..\sql\MinSizeRel\mysqld.lib;..\..\..\archive_output_directory\MinSizeRel\protobuf-lite.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\MinSizeRel\event_core.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\MinSizeRel\event_extra.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\MinSizeRel\event_openssl.lib;..\..\..\archive_output_directory\MinSizeRel\protobuf-lite.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\MinSizeRel\event_core.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\MinSizeRel\event_extra.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\MinSizeRel\event_openssl.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\MinSizeRel\event_core.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/mysql/win/rapid/plugin/x/MinSizeRel/mysqlx.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/mysql/win/rapid/plugin/x/MinSizeRel/mysqlx.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\protocol\errors;E:\mysql\mysql-5.7.33\rapid\plugin\x\src;E:\mysql\mysql-5.7.33\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\rapid\plugin\x\include\mysql;E:\mysql\win\rapid\plugin\x\generated;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlxtest_src\common;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\extra\protobuf\protobuf-2.6.1\src;D:\BOOST\boost_1_59_0;E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\include;E:\mysql\win\extra\libevent\libevent-2.1.11-stable\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;MYSQL_DYNAMIC_PLUGIN;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;BOOST_ALL_NO_LIB;BOOST_NO_AUTO_PTR;XPLUGIN_LOG_PROTOBUF;CMAKE_INTDIR="RelWithDebInfo";mysqlx_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;MYSQL_DYNAMIC_PLUGIN;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;BOOST_ALL_NO_LIB;BOOST_NO_AUTO_PTR;XPLUGIN_LOG_PROTOBUF;CMAKE_INTDIR=\"RelWithDebInfo\";mysqlx_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\protocol\errors;E:\mysql\mysql-5.7.33\rapid\plugin\x\src;E:\mysql\mysql-5.7.33\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\rapid\plugin\x\include\mysql;E:\mysql\win\rapid\plugin\x\generated;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlxtest_src\common;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\extra\protobuf\protobuf-2.6.1\src;D:\BOOST\boost_1_59_0;E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\include;E:\mysql\win\extra\libevent\libevent-2.1.11-stable\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\mysql\win\include;E:\mysql\mysql-5.7.33\extra\rapidjson\include;E:\mysql\win\libbinlogevents\include;E:\mysql\mysql-5.7.33\libbinlogevents\export;E:\mysql\win\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\protocol\errors;E:\mysql\mysql-5.7.33\rapid\plugin\x\src;E:\mysql\mysql-5.7.33\rapid\plugin\x;E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include;E:\mysql\mysql-5.7.33\include;E:\mysql\mysql-5.7.33\rapid\plugin\x\include\mysql;E:\mysql\win\rapid\plugin\x\generated;C:\Program Files\OpenSSL-Win64\include;E:\mysql\mysql-5.7.33\sql;E:\mysql\mysql-5.7.33\libbinlogevents\include;E:\mysql\mysql-5.7.33\sql\auth;E:\mysql\mysql-5.7.33\regex;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlxtest_src\common;E:\mysql\mysql-5.7.33\zlib;E:\mysql\win\zlib;E:\mysql\mysql-5.7.33\extra\protobuf\protobuf-2.6.1\src;D:\BOOST\boost_1_59_0;E:\mysql\mysql-5.7.33\extra\libevent\libevent-2.1.11-stable\include;E:\mysql\win\extra\libevent\libevent-2.1.11-stable\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;..\..\..\archive_output_directory\RelWithDebInfo\mysqlservices.lib;..\..\..\sql\RelWithDebInfo\mysqld.lib;..\..\..\archive_output_directory\RelWithDebInfo\protobuf-lite.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\RelWithDebInfo\event_core.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\RelWithDebInfo\event_extra.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\RelWithDebInfo\event_openssl.lib;..\..\..\archive_output_directory\RelWithDebInfo\protobuf-lite.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\RelWithDebInfo\event_core.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\RelWithDebInfo\event_extra.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\RelWithDebInfo\event_openssl.lib;..\..\..\extra\libevent\libevent-2.1.11-stable\lib\RelWithDebInfo\event_core.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/mysql/win/rapid/plugin/x/RelWithDebInfo/mysqlx.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/mysql/win/rapid/plugin/x/RelWithDebInfo/mysqlx.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\extra\protobuf\Debug\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx.proto;E:\mysql\win\extra\protobuf\Debug\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\extra\protobuf\Release\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx.proto;E:\mysql\win\extra\protobuf\Release\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\extra\protobuf\MinSizeRel\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx.proto;E:\mysql\win\extra\protobuf\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\extra\protobuf\RelWithDebInfo\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx.proto;E:\mysql\win\extra\protobuf\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_datatypes.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_datatypes.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\extra\protobuf\Debug\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_datatypes.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_datatypes.proto;E:\mysql\win\extra\protobuf\Debug\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_datatypes.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_datatypes.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_datatypes.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\extra\protobuf\Release\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_datatypes.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_datatypes.proto;E:\mysql\win\extra\protobuf\Release\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_datatypes.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_datatypes.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_datatypes.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\extra\protobuf\MinSizeRel\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_datatypes.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_datatypes.proto;E:\mysql\win\extra\protobuf\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_datatypes.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_datatypes.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_datatypes.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\extra\protobuf\RelWithDebInfo\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_datatypes.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_datatypes.proto;E:\mysql\win\extra\protobuf\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_datatypes.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_datatypes.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_connection.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_connection.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\extra\protobuf\Debug\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_connection.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_connection.proto;E:\mysql\win\extra\protobuf\Debug\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_connection.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_connection.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_connection.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\extra\protobuf\Release\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_connection.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_connection.proto;E:\mysql\win\extra\protobuf\Release\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_connection.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_connection.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_connection.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\extra\protobuf\MinSizeRel\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_connection.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_connection.proto;E:\mysql\win\extra\protobuf\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_connection.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_connection.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_connection.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\extra\protobuf\RelWithDebInfo\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_connection.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_connection.proto;E:\mysql\win\extra\protobuf\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_connection.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_connection.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_expect.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_expect.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\extra\protobuf\Debug\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_expect.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expect.proto;E:\mysql\win\extra\protobuf\Debug\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expect.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expect.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_expect.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\extra\protobuf\Release\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_expect.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expect.proto;E:\mysql\win\extra\protobuf\Release\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expect.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expect.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_expect.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\extra\protobuf\MinSizeRel\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_expect.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expect.proto;E:\mysql\win\extra\protobuf\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expect.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expect.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_expect.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\extra\protobuf\RelWithDebInfo\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_expect.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expect.proto;E:\mysql\win\extra\protobuf\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expect.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expect.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_expr.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_expr.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\extra\protobuf\Debug\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_expr.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expr.proto;E:\mysql\win\extra\protobuf\Debug\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expr.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expr.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_expr.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\extra\protobuf\Release\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_expr.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expr.proto;E:\mysql\win\extra\protobuf\Release\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expr.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expr.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_expr.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\extra\protobuf\MinSizeRel\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_expr.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expr.proto;E:\mysql\win\extra\protobuf\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expr.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expr.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_expr.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\extra\protobuf\RelWithDebInfo\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_expr.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expr.proto;E:\mysql\win\extra\protobuf\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expr.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expr.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_crud.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_crud.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\extra\protobuf\Debug\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_crud.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_crud.proto;E:\mysql\win\extra\protobuf\Debug\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_crud.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_crud.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_crud.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\extra\protobuf\Release\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_crud.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_crud.proto;E:\mysql\win\extra\protobuf\Release\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_crud.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_crud.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_crud.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\extra\protobuf\MinSizeRel\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_crud.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_crud.proto;E:\mysql\win\extra\protobuf\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_crud.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_crud.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_crud.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\extra\protobuf\RelWithDebInfo\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_crud.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_crud.proto;E:\mysql\win\extra\protobuf\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_crud.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_crud.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_sql.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_sql.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\extra\protobuf\Debug\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_sql.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_sql.proto;E:\mysql\win\extra\protobuf\Debug\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_sql.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_sql.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_sql.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\extra\protobuf\Release\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_sql.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_sql.proto;E:\mysql\win\extra\protobuf\Release\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_sql.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_sql.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_sql.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\extra\protobuf\MinSizeRel\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_sql.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_sql.proto;E:\mysql\win\extra\protobuf\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_sql.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_sql.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_sql.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\extra\protobuf\RelWithDebInfo\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_sql.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_sql.proto;E:\mysql\win\extra\protobuf\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_sql.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_sql.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_session.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_session.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\extra\protobuf\Debug\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_session.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_session.proto;E:\mysql\win\extra\protobuf\Debug\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_session.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_session.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_session.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\extra\protobuf\Release\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_session.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_session.proto;E:\mysql\win\extra\protobuf\Release\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_session.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_session.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_session.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\extra\protobuf\MinSizeRel\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_session.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_session.proto;E:\mysql\win\extra\protobuf\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_session.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_session.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_session.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\extra\protobuf\RelWithDebInfo\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_session.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_session.proto;E:\mysql\win\extra\protobuf\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_session.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_session.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_notice.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_notice.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\extra\protobuf\Debug\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_notice.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_notice.proto;E:\mysql\win\extra\protobuf\Debug\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_notice.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_notice.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_notice.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\extra\protobuf\Release\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_notice.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_notice.proto;E:\mysql\win\extra\protobuf\Release\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_notice.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_notice.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_notice.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\extra\protobuf\MinSizeRel\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_notice.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_notice.proto;E:\mysql\win\extra\protobuf\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_notice.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_notice.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_notice.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\extra\protobuf\RelWithDebInfo\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_notice.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_notice.proto;E:\mysql\win\extra\protobuf\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_notice.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_notice.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\win\CMakeFiles\774afe9f07ed70f3ae75ca5ef2dc3a3d\mysqlx_resultset.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_resultset.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\extra\protobuf\Debug\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_resultset.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_resultset.proto;E:\mysql\win\extra\protobuf\Debug\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_resultset.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_resultset.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_resultset.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\extra\protobuf\Release\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_resultset.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_resultset.proto;E:\mysql\win\extra\protobuf\Release\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_resultset.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_resultset.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_resultset.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\extra\protobuf\MinSizeRel\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_resultset.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_resultset.proto;E:\mysql\win\extra\protobuf\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_resultset.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_resultset.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Running C++ protocol buffer compiler (lite) on E:/mysql/mysql-5.7.33/rapid/plugin/x/protocol/mysqlx_resultset.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\extra\protobuf\RelWithDebInfo\protoc.exe --cpp_out E:/mysql/win/rapid/plugin/x/generated/protobuf_lite -I E:/mysql/win/rapid/plugin/x/generated/protobuf_lite E:/mysql/win/rapid/plugin/x/generated/protobuf_lite/mysqlx_resultset.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_resultset.proto;E:\mysql\win\extra\protobuf\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_resultset.pb.cc;E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_resultset.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/rapid/plugin/x/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/rapid/plugin/x/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlx_configure.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlx_protobuf.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlx_variables.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\source_files.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysqlx_ername.h.in;E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysqlx_error.h.in;E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysqlx_version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/rapid/plugin/x/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/rapid/plugin/x/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlx_configure.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlx_protobuf.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlx_variables.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\source_files.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysqlx_ername.h.in;E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysqlx_error.h.in;E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysqlx_version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/rapid/plugin/x/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/rapid/plugin/x/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlx_configure.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlx_protobuf.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlx_variables.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\source_files.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysqlx_ername.h.in;E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysqlx_error.h.in;E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysqlx_version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/mysql/mysql-5.7.33/rapid/plugin/x/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/mysql/mysql-5.7.33 -BE:/mysql/win --check-stamp-file E:/mysql/win/rapid/plugin/x/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\mysql-5.7.33\cmake\compile_flags.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlx_configure.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlx_protobuf.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\mysqlx_variables.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\source_files.cmake;E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysqlx_ername.h.in;E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysqlx_error.h.in;E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysqlx_version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_plugin.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_performance_schema.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_log.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\io\xpl_listener_tcp.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\io\xpl_listener_unix_socket.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_server.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_session.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_client.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_dispatcher.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_system_variables.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_regex.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\io\xpl_listener_factory.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysql_variables.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysql_function_names.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysql_show_variable_wrapper.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\auth_mysql41.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\admin_cmd_handler.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\query_formatter.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\query_string_builder.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\expr_generator.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\crud_cmd_handler.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\buffering_command_delegate.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\callback_command_delegate.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\streaming_command_delegate.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\sql_data_context.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\sql_data_result.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\sql_user_require.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\json_utils.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\expect.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\statement_builder.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\update_statement_builder.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\find_statement_builder.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\delete_statement_builder.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\view_statement_builder.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\insert_statement_builder.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\notices.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\ngs_common\connection_type.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\ngs_common\connection_vio.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\ngs_common\operations_factory.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\ngs_common\options_ssl.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\capabilities\configurator.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\capabilities\handler_auth_mech.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\capabilities\handler_tls.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\client.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\client_list.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\client_session.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol\buffer.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol\message_builder.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol\metadata_builder.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol\notice_builder.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol\output_buffer.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol\page_pool.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol\row_builder.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol_authentication.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol_decoder.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\protocol_encoder.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\scheduler.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\server.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\server_acceptors.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\server_client_timeout.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\socket_events.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\src\thread.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\io\xpl_listener_tcp.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\io\xpl_listener_unix_socket.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_server.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_session.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_client.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_dispatcher.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_system_variables.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_common_status_variables.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_global_status_variables.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_session_status_variables.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_log.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\xpl_regex.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\auth_plain.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\auth_mysql41.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\admin_cmd_handler.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\query_string_builder.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\expr_generator.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\crud_cmd_handler.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\buffering_command_delegate.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\callback_command_delegate.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\command_delegate.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\streaming_command_delegate.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\sql_data_context.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\sql_data_result.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\sql_user_require.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\json_utils.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\expect.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\statement_builder.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\update_statement_builder.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\find_statement_builder.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\insert_statement_builder.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\delete_statement_builder.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\view_statement_builder.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\notices.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\cap_handles_expired_passwords.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\src\mysql_function_names.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\capabilities\configurator.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\capabilities\handler.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\capabilities\handler_auth_mech.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\capabilities\handler_readonly_value.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\capabilities\handler_tls.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\client.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\client_list.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\client_session.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\error_code.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\log.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\memory.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\ngs_error.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\buffer.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\message.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\message_builder.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\metadata_builder.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\notice_builder.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\output_buffer.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\page_pool.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\protocol_config.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol\row_builder.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol_authentication.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol_decoder.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol_encoder.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol_fwd.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\protocol_monitor.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\scheduler.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\server.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\server_acceptors.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\server_client_timeout.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\socket_events.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\socket_events_interface.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs\thread.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\atomic.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\bind.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\chrono.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\connection_type.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\connection_vio.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\file_interface.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\operations_factory.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\operations_factory_interface.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\options.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\options_ssl.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\protocol_const.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\protocol_protobuf.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\smart_ptr.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\socket_interface.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\string_formatter.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\system_interface.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\to_string.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\types.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\xdatetime.h" />
+    <ClInclude Include="E:\mysql\mysql-5.7.33\rapid\plugin\x\ngs\include\ngs_common\xdecimal.h" />
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx.pb.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_datatypes.pb.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_connection.pb.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expect.pb.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expr.pb.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_crud.pb.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_sql.pb.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_session.pb.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_notice.pb.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_resultset.pb.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\mysql\win\rapid\plugin\x\generated\protobuf_lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4267;4244;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx.pb.h" />
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_datatypes.pb.h" />
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_connection.pb.h" />
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expect.pb.h" />
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_expr.pb.h" />
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_crud.pb.h" />
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_sql.pb.h" />
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_session.pb.h" />
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_notice.pb.h" />
+    <ClInclude Include="E:\mysql\win\rapid\plugin\x\generated\protobuf_lite\mysqlx_resultset.pb.h" />
+    <ResourceCompile Include="E:\mysql\win\versioninfo_dll.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\mysql\win\ZERO_CHECK.vcxproj">
+      <Project>{B584D885-F4E3-3C53-87CE-DB7650C6F37C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\GenError.vcxproj">
+      <Project>{1646E8D2-EEAA-3B10-A0C2-72DAFC9AD060}</Project>
+      <Name>GenError</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\rapid\plugin\x\GenLiteProtos.vcxproj">
+      <Project>{1D3B99A8-82B8-3E2D-9F2E-0D7BC5A2799E}</Project>
+      <Name>GenLiteProtos</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\libevent\libevent-2.1.11-stable\event_core.vcxproj">
+      <Project>{4C39724E-C765-331A-A645-47E2AF4B71A3}</Project>
+      <Name>event_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\libevent\libevent-2.1.11-stable\event_extra.vcxproj">
+      <Project>{48798992-2905-37FF-B14F-38A31E57B3C5}</Project>
+      <Name>event_extra</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\libevent\libevent-2.1.11-stable\event_openssl.vcxproj">
+      <Project>{A01C16A1-EFE4-30BC-A6A3-3D396B45E0C1}</Project>
+      <Name>event_openssl</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\sql\mysqld.vcxproj">
+      <Project>{46F27060-8B60-3C50-A8AF-BE3DD3A2BBE1}</Project>
+      <Name>mysqld</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\libservices\mysqlservices.vcxproj">
+      <Project>{3D32B18C-E16A-38D9-ADD4-A43C74228CE2}</Project>
+      <Name>mysqlservices</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\protobuf\protobuf-lite.vcxproj">
+      <Project>{ADCECADC-C8A1-38C8-8A5B-B69232D827EF}</Project>
+      <Name>protobuf-lite</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\mysql\win\extra\protobuf\protoc.vcxproj">
+      <Project>{8D67942A-9DB4-3321-9D6B-A235C4B4E2C0}</Project>
+      <Name>protoc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

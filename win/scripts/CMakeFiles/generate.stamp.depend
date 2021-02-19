@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+E:/mysql/mysql-5.7.33/scripts/CMakeLists.txt
+E:/mysql/mysql-5.7.33/scripts/mysql_config.pl.in
+E:/mysql/mysql-5.7.33/scripts/mysqld_multi.sh
+E:/mysql/mysql-5.7.33/scripts/mysqldumpslow.sh
