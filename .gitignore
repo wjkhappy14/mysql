@@ -36,3 +36,5 @@
 /.vs
 /win/.vs/MySQL/v16
 
+*.exp
+*.recipe
