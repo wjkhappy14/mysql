@@ -38,3 +38,6 @@
 
 *.exp
 *.recipe
+/win/sql/data/ib_logfile0
+/win/sql/data/ib_logfile1
+/win/sql/data/ibdata1
