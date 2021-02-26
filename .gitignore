@@ -39,6 +39,10 @@
 *.exp
 *.recipe
 /win/sql/data/ib_logfile0
+/win/archive_output_directory
+/win/extra
+/win/mysql-test
+/win/unittest
 /win/sql/data/ib_logfile1
 /win/sql/data/ibdata1
 /mysql-5.7.33/out/build/x64-Debug (默认值)/.cmake/api/v1/query/client-MicrosoftVS/query.json

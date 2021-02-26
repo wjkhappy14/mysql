@@ -2423,7 +2423,7 @@ trx_commit_for_mysql(
 	case TRX_STATE_ACTIVE:
 	case TRX_STATE_PREPARED:
 
-		trx->op_info = "committing";
+		trx->op_info = "[Ìá½»]committing";
 
 		if (trx->id != 0) {
 			trx_update_mod_tables_timestamp(trx);

@@ -102,7 +102,7 @@ static my_bool xarecover_handlerton(THD *unused, plugin_ref plugin,
 #ifndef DBUG_OFF
           char buf[XIDDATASIZE * 4 + 6]; // see xid_to_str
           XID *xid= info->list + i;
-          sql_print_information("ignore xid %s", xid->xid_to_str(buf));
+          sql_print_information("忽略 xid %s", xid->xid_to_str(buf));
 #endif
           transaction_cache_insert_recovery(info->list + i);
           info->found_foreign_xids++;
@@ -121,7 +121,7 @@ static my_bool xarecover_handlerton(THD *unused, plugin_ref plugin,
 #ifndef DBUG_OFF
           char buf[XIDDATASIZE * 4 + 6]; // see xid_to_str
           XID *xid= info->list + i;
-          sql_print_information("commit xid %s", xid->xid_to_str(buf));
+          sql_print_information("提交 xid %s", xid->xid_to_str(buf));
 #endif
           hton->commit_by_xid(hton, info->list + i);
         }
@@ -130,7 +130,7 @@ static my_bool xarecover_handlerton(THD *unused, plugin_ref plugin,
 #ifndef DBUG_OFF
           char buf[XIDDATASIZE * 4 + 6]; // see xid_to_str
           XID *xid= info->list + i;
-          sql_print_information("rollback xid %s", xid->xid_to_str(buf));
+          sql_print_information("回滚 xid %s", xid->xid_to_str(buf));
 #endif
           hton->rollback_by_xid(hton, info->list + i);
         }
@@ -163,7 +163,7 @@ int ha_recover(HASH *commit_list)
     DBUG_RETURN(0);
 
   if (info.commit_list)
-    sql_print_information("Starting crash recovery...");
+    sql_print_information("[开始崩溃恢复] crash recovery...");
 
   if (total_ha_2pc > (ulong)opt_bin_log + 1)
   {
@@ -218,7 +218,7 @@ int ha_recover(HASH *commit_list)
     DBUG_RETURN(1);
   }
   if (info.commit_list)
-    sql_print_information("Crash recovery finished.");
+    sql_print_information("[崩溃恢复]Crash recovery 完成.");
   DBUG_RETURN(0);
 }
 

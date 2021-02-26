@@ -210,3 +210,186 @@ InnoDB: Progress in percent: 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
 2021-02-20T02:39:00.944790Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 61055ms. The settings might not be optimal. (flushed=2 and evicted=0, during the time.)
 2021-02-20T02:40:26.722095Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 68601ms. The settings might not be optimal. (flushed=2 and evicted=0, during the time.)
 2021-02-20T02:42:42.844440Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 13126ms. The settings might not be optimal. (flushed=2 and evicted=0, during the time.)
+2021-02-26T01:12:24.706490Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2021-02-26T01:12:24.709012Z 0 [Note] --secure-file-priv is set to NULL. Operations related to importing and exporting data are disabled
+2021-02-26T01:12:24.710963Z 0 [Note] E:\mysql\win\sql\Debug\mysqld.exe (mysqld 5.7.33-debug) starting as process 19612 ...
+2021-02-26T01:12:24.950440Z 0 [Note] InnoDB: !!!!!!!! UNIV_DEBUG switched on !!!!!!!!!
+2021-02-26T01:12:24.951062Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2021-02-26T01:12:24.951654Z 0 [Note] InnoDB: Uses event mutexes
+2021-02-26T01:12:24.952060Z 0 [Note] InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier
+2021-02-26T01:12:24.952641Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-02-26T01:12:24.954857Z 0 [Note] InnoDB: Number of pools: 1
+2021-02-26T01:12:24.955674Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2021-02-26T01:12:24.962434Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2021-02-26T01:12:25.094030Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-02-26T01:12:27.414768Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2021-02-26T01:12:27.430739Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2774252
+2021-02-26T01:12:27.431375Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2774261
+2021-02-26T01:12:27.431985Z 0 [Note] InnoDB: Database was not shutdown normally!
+2021-02-26T01:12:27.432450Z 0 [Note] InnoDB: Starting crash recovery.
+2021-02-26T01:56:51.815212Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2021-02-26T01:56:51.818820Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-02-26T01:56:51.829060Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-02-26T01:56:52.215906Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2021-02-26T01:56:57.457589Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2021-02-26T01:56:57.459171Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2021-02-26T02:00:22.454896Z 0 [Note] InnoDB: Waiting for purge to start
+2021-02-26T02:00:37.186401Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 2889784ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2021-02-26T02:00:57.747488Z 0 [Note] InnoDB: 5.7.33 started; log sequence number 2774261
+2021-02-26T02:31:45.759962Z 0 [Note] InnoDB: Loading buffer pool(s) from E:\mysql\win\sql\data\ib_buffer_pool
+2021-02-26T02:31:45.760954Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2021-02-26T02:31:50.815061Z 0 [Note] InnoDB: Buffer pool(s) load completed at 210226 10:31:50
+2021-02-26T02:31:50.914403Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2021-02-26T02:31:50.917644Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+2021-02-26T02:31:51.048412Z 0 [Warning] CA certificate ca.pem is self signed.
+2021-02-26T02:31:51.050604Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+2021-02-26T02:31:51.101581Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2021-02-26T02:31:51.102523Z 0 [Note] IPv6 is available.
+2021-02-26T02:31:51.103190Z 0 [Note]   - '::' resolves to '::';
+2021-02-26T02:31:51.105806Z 0 [Note] Server socket created on IP: '::'.
+2021-02-26T02:31:57.688465Z 0 [Note] Event Scheduler: Loaded 0 events
+2021-02-26T02:31:57.690461Z 0 [Note] E:\mysql\win\sql\Debug\mysqld.exe: ready for connections.
+Version: '5.7.33-debug'  socket: ''  port: 3306  Source distribution
+2021-02-26T03:44:36.436296Z 3 [Note] Access denied for user 'ODBC'@'localhost' (using password: NO)
+2021-02-26T03:44:56.368455Z 4 [Note] Access denied for user 'ODBC'@'localhost' (using password: NO)
+2021-02-26T03:45:17.967752Z 5 [Note] Access denied for user 'ODBC'@'localhost' (using password: NO)
+2021-02-26T03:52:21.340306Z 0 [Warning] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2021-02-26T03:52:21.340462Z 0 [Warning] 'NO_AUTO_CREATE_USER' sql mode was not set.
+2021-02-26T03:52:21.340504Z 0 [Note] --secure-file-priv is set to NULL. Operations related to importing and exporting data are disabled
+2021-02-26T03:52:21.341052Z 0 [Note] E:\mysql\win\sql\Debug\mysqld.exe (mysqld 5.7.33-debug-log) starting as process 3456 ...
+2021-02-26T03:52:21.341846Z 0 [ERROR] Can't find error-message file 'E:\mysql\win\sql\data\error\errmsg.sys'. Check error-message file location and 'lc-messages-dir' configuration directive.
+2021-02-26T03:52:21.456386Z 0 [Note] InnoDB: !!!!!!!! UNIV_DEBUG switched on !!!!!!!!!
+2021-02-26T03:52:21.456976Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2021-02-26T03:52:21.457545Z 0 [Note] InnoDB: Uses event mutexes
+2021-02-26T03:52:21.457942Z 0 [Note] InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier
+2021-02-26T03:52:21.458523Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-02-26T03:52:21.459003Z 0 [Note] InnoDB: Adjusting innodb_buffer_pool_instances from 8 to 1 since innodb_buffer_pool_size is less than 1024 MiB
+2021-02-26T03:52:21.468602Z 0 [Note] InnoDB: Number of pools: 1
+2021-02-26T03:52:21.469357Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2021-02-26T03:52:21.474459Z 0 [Note] InnoDB: Initializing buffer pool, total size = 8M, instances = 1, chunk size = 8M
+2021-02-26T03:52:21.483490Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-02-26T03:52:22.551999Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2021-02-26T03:52:22.569117Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2774289
+2021-02-26T03:52:22.569741Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2774298
+2021-02-26T03:52:22.570689Z 0 [Note] InnoDB: Database was not shutdown normally!
+2021-02-26T03:52:22.571169Z 0 [Note] InnoDB: Starting crash recovery.
+2021-02-26T03:52:24.597206Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2021-02-26T03:52:24.599703Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-02-26T03:52:24.603087Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-02-26T03:52:24.909785Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2021-02-26T03:52:25.115889Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2021-02-26T03:52:25.116648Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2021-02-26T03:52:25.117982Z 0 [Note] InnoDB: Waiting for purge to start
+2021-02-26T03:52:25.182664Z 0 [Note] InnoDB: 5.7.33 started; log sequence number 2774298
+2021-02-26T03:52:25.183705Z 0 [Note] InnoDB: Loading buffer pool(s) from E:\mysql\win\sql\data\ib_buffer_pool
+2021-02-26T03:52:25.184361Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2021-02-26T03:52:25.502636Z 0 [Note] Recovering after a crash using ANGKOR-DEV-bin
+2021-02-26T03:52:25.540238Z 0 [Note] Starting crash recovery...
+2021-02-26T03:52:25.552916Z 0 [Note] Crash recovery finished.
+2021-02-26T03:52:25.783728Z 0 [Note] InnoDB: Buffer pool(s) load completed at 210226 11:52:25
+2021-02-26T03:52:25.907487Z 0 [Note] Read 2 events from binary log file '.\ANGKOR-DEV-bin.000001' to determine the GTIDs purged from binary logs.
+2021-02-26T03:52:25.954704Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2021-02-26T03:52:25.956942Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+2021-02-26T03:52:26.022534Z 0 [Warning] CA certificate ca.pem is self signed.
+2021-02-26T03:52:26.023608Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+2021-02-26T03:52:26.054399Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2021-02-26T03:52:26.055626Z 0 [Note] IPv6 is available.
+2021-02-26T03:52:26.056265Z 0 [Note]   - '::' resolves to '::';
+2021-02-26T03:52:26.057059Z 0 [Note] Server socket created on IP: '::'.
+2021-02-26T03:52:26.070349Z 0 [Warning] 
+2021-02-26T03:52:26.071600Z 0 [Note] Shared memory setting up listener
+2021-02-26T03:52:26.600350Z 0 [Note] Failed to start slave threads for channel ''
+2021-02-26T03:52:27.901269Z 0 [Note] 
+2021-02-26T05:24:13.454555Z 0 [Warning] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2021-02-26T05:24:13.454722Z 0 [Warning] 'NO_AUTO_CREATE_USER' sql mode was not set.
+2021-02-26T05:24:13.454772Z 0 [Note] --secure-file-priv is set to NULL. Operations related to importing and exporting data are disabled
+2021-02-26T05:24:13.476968Z 0 [Note] E:\mysql\win\sql\Debug\mysqld.exe (mysqld 5.7.33-debug-log) starting as process 2384 ...
+2021-02-26T05:24:13.477571Z 0 [ERROR] Can't find error-message file 'E:\mysql\win\sql\data\error\errmsg.sys'. Check error-message file location and 'lc-messages-dir' configuration directive.
+2021-02-26T05:24:13.617928Z 0 [Note] InnoDB: !!!!!!!! UNIV_DEBUG switched on !!!!!!!!!
+2021-02-26T05:24:13.618545Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2021-02-26T05:24:13.619152Z 0 [Note] InnoDB: Uses event mutexes
+2021-02-26T05:24:13.619578Z 0 [Note] InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier
+2021-02-26T05:24:13.620220Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-02-26T05:24:13.620760Z 0 [Note] InnoDB: Adjusting innodb_buffer_pool_instances from 8 to 1 since innodb_buffer_pool_size is less than 1024 MiB
+2021-02-26T05:24:13.623473Z 0 [Note] InnoDB: Number of pools: 1
+2021-02-26T05:24:13.624232Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2021-02-26T05:24:13.645304Z 0 [Note] InnoDB: Initializing buffer pool, total size = 8M, instances = 1, chunk size = 8M
+2021-02-26T05:24:13.655554Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-02-26T05:24:13.846376Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2021-02-26T05:24:13.896378Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2897790
+2021-02-26T05:24:13.897061Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2897799
+2021-02-26T05:24:13.897698Z 0 [Note] InnoDB: Database was not shutdown normally!
+2021-02-26T05:24:13.898204Z 0 [Note] InnoDB: Starting crash recovery.
+2021-02-26T05:24:14.720106Z 0 [Note] InnoDB: Last MySQL binlog file position 0 34533, file name ANGKOR-DEV-bin.000006
+2021-02-26T05:24:14.919866Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2021-02-26T05:24:14.920655Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-02-26T05:24:14.921481Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-02-26T05:24:15.449036Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2021-02-26T05:24:18.007853Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2021-02-26T05:24:18.008774Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2021-02-26T05:24:18.010294Z 0 [Note] InnoDB: Waiting for purge to start
+2021-02-26T05:24:18.065066Z 0 [Note] InnoDB: Waiting for purge to start
+2021-02-26T05:24:18.138227Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 4432ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2021-02-26T05:24:18.140872Z 0 [Note] InnoDB: 5.7.33 started; log sequence number 2897799
+2021-02-26T05:24:18.143017Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2021-02-26T05:24:18.144708Z 0 [Note] Recovering after a crash using ANGKOR-DEV-bin
+2021-02-26T05:24:18.175572Z 0 [Note] InnoDB: Loading buffer pool(s) from E:\mysql\win\sql\data\ib_buffer_pool
+2021-02-26T05:24:18.267737Z 0 [Note] Starting crash recovery...
+2021-02-26T05:24:18.319177Z 0 [Note] Crash recovery finished.
+2021-02-26T05:24:18.576057Z 0 [Note] InnoDB: Buffer pool(s) load completed at 210226 13:24:18
+2021-02-26T05:24:18.691563Z 0 [Note] Read 2 events from binary log file '.\ANGKOR-DEV-bin.000001' to determine the GTIDs purged from binary logs.
+2021-02-26T05:24:18.740580Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2021-02-26T05:24:18.741502Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+2021-02-26T05:24:18.745538Z 0 [Warning] CA certificate ca.pem is self signed.
+2021-02-26T05:24:18.746227Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+2021-02-26T05:24:18.747317Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2021-02-26T05:24:18.748157Z 0 [Note] IPv6 is available.
+2021-02-26T05:24:18.748571Z 0 [Note]   - '::' resolves to '::';
+2021-02-26T05:24:18.749097Z 0 [Note] Server socket created on IP: '::'.
+2021-02-26T05:24:18.749649Z 0 [Warning] 
+2021-02-26T05:24:18.750360Z 0 [Note] Shared memory setting up listener
+2021-02-26T05:24:18.953506Z 0 [Note] Failed to start slave threads for channel ''
+2021-02-26T05:24:19.015070Z 0 [Note] 
+2021-02-26T05:34:35.961044Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 18822ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2021-02-26T05:34:56.158659Z 3 [Note] 
+2021-02-26T07:32:34.604800Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2021-02-26T07:32:34.605057Z 0 [Note] --secure-file-priv is set to NULL. Operations related to importing and exporting data are disabled
+2021-02-26T07:32:34.608725Z 0 [Note] E:\mysql\win\sql\Debug\mysqld.exe (mysqld 5.7.33-debug) starting as process 21076 ...
+2021-02-26T07:32:34.732284Z 0 [Note] InnoDB: !!!!!!!! UNIV_DEBUG switched on !!!!!!!!!
+2021-02-26T07:32:34.733069Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2021-02-26T07:32:34.733890Z 0 [Note] InnoDB: Uses event mutexes
+2021-02-26T07:32:34.734359Z 0 [Note] InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier
+2021-02-26T07:32:34.736170Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-02-26T07:32:34.746028Z 0 [Note] InnoDB: Number of pools: 1
+2021-02-26T07:32:34.747814Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2021-02-26T07:32:34.778084Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2021-02-26T07:32:35.053496Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-02-26T07:32:35.241369Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2021-02-26T07:32:35.855415Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2897818
+2021-02-26T07:32:35.856084Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2897827
+2021-02-26T07:32:35.856712Z 0 [Note] InnoDB: Database was not shutdown normally!
+2021-02-26T07:32:35.857297Z 0 [Note] InnoDB: Starting crash recovery.
+2021-02-26T07:32:38.273783Z 0 [Note] InnoDB: Last MySQL binlog file position 0 34533, file name ANGKOR-DEV-bin.000006
+2021-02-26T07:32:48.031371Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2021-02-26T07:32:48.032665Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-02-26T07:32:48.033897Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-02-26T07:32:48.723803Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2021-02-26T07:32:48.964863Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2021-02-26T07:32:48.965633Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2021-02-26T07:32:48.973612Z 0 [Note] InnoDB: Waiting for purge to start
+2021-02-26T07:32:49.032264Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 13965ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2021-02-26T07:32:49.049739Z 0 [Note] InnoDB: 5.7.33 started; log sequence number 2897827
+2021-02-26T07:32:49.054017Z 0 [Note] InnoDB: Loading buffer pool(s) from E:\mysql\win\sql\data\ib_buffer_pool
+2021-02-26T07:32:49.056139Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2021-02-26T07:32:53.701291Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2021-02-26T07:32:53.702147Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+2021-02-26T07:32:53.734212Z 0 [Note] InnoDB: Buffer pool(s) load completed at 210226 15:32:53
+2021-02-26T07:32:53.754980Z 0 [Warning] CA certificate ca.pem is self signed.
+2021-02-26T07:32:53.755672Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+2021-02-26T07:32:53.790899Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2021-02-26T07:32:53.791804Z 0 [Note] IPv6 is available.
+2021-02-26T07:32:53.792391Z 0 [Note]   - '::' resolves to '::';
+2021-02-26T07:32:53.792847Z 0 [Note] Server socket created on IP: '::'.
+2021-02-26T07:32:57.518042Z 0 [Note] Event Scheduler: Loaded 0 events
+2021-02-26T07:32:57.520949Z 0 [Note] E:\mysql\win\sql\Debug\mysqld.exe: ready for connections.
+Version: '5.7.33-debug'  socket: ''  port: 3306  Source distribution

@@ -1591,8 +1591,8 @@ Returns the NUL terminated value of glob_hostname.
 @return pointer to glob_hostname. */
 const char*
 server_get_hostname()
-/*=================*/
 {
+	sql_print_information(glob_hostname);
 	return(glob_hostname);
 }
 
@@ -4543,7 +4543,7 @@ innobase_rollback(
 #ifdef UNIV_DEBUG
 			char	buffer[1024];
 
-			ib::info() << "Forced rollback : "
+			ib::info() << "强制回滚 : "
 				<< thd_security_context(thd, buffer,
 							sizeof(buffer), 512);
 #endif /* UNIV_DEBUG */
@@ -4961,12 +4961,13 @@ ha_innobase::index_type(
 	uint	keynr)		/*!< : index number */
 {
 	dict_index_t*	index = innobase_get_index(keynr);
-
+	
 	if (index && index->type & DICT_FTS) {
 		return("FULLTEXT");
 	} else if (dict_index_is_spatial(index)) {
 		return("SPATIAL");
 	} else {
+		sql_print_information("索引类型是： BTREE");
 		return("BTREE");
 	}
 }
