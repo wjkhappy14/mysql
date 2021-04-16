@@ -1,0 +1,24 @@
+wait_started,wait_age,wait_age_secs,locked_table,locked_table_schema,locked_table_name,locked_table_partition,locked_table_subpartition,locked_index,locked_type,waiting_trx_id,waiting_trx_started,waiting_trx_age,waiting_trx_rows_locked,waiting_trx_rows_modified,waiting_pid,waiting_query,waiting_lock_id,waiting_lock_mode,blocking_trx_id,blocking_pid,blocking_query,blocking_lock_id,blocking_lock_mode,blocking_trx_started,blocking_trx_age,blocking_trx_rows_locked,blocking_trx_rows_modified,sql_kill_blocking_query,sql_kill_blocking_connection
+"2021-01-20 07:31:47",00:00:38,38,`ABP`.`UserAccount`,ABP,UserAccount,NULL,NULL,PRIMARY,RECORD,4665,"2021-01-20 07:31:47",00:00:38,1,0,28,"UPDATE UserAccount
+                         SET
+                         Balance =Balance-1,
+                         LastUpdateTime= NOW()
+                         WHERE UserId='1' and Balance-1>0
+                         limit 1",139990049669544:12:4:2:139989962832976,"X,REC_NOT_GAP",4662,24,NULL,139990049668688:12:4:2:139989962827056,"X,REC_NOT_GAP","2021-01-20 07:00:08",00:32:17,1,1,"KILL QUERY 24","KILL 24"
+"2021-01-20 07:31:52",00:00:33,33,`ABP`.`UserAccount`,ABP,UserAccount,NULL,NULL,PRIMARY,RECORD,4666,"2021-01-20 07:31:52",00:00:33,1,0,26,"UPDATE UserAccount
+                         SET
+                         Balance =Balance-1,
+                         LastUpdateTime= NOW()
+                         WHERE UserId=1 and Balance-1>0
+                         limit 1",139990049666120:12:4:2:139989962808640,"X,REC_NOT_GAP",4665,28,"UPDATE UserAccount
+                         SET
+                         Balance =Balance-1,
+                         LastUpdateTime= NOW()
+                         WHERE UserId='1' and Balance-1>0
+                         limit 1",139990049669544:12:4:2:139989962832976,"X,REC_NOT_GAP","2021-01-20 07:31:47",00:00:38,1,0,"KILL QUERY 28","KILL 28"
+"2021-01-20 07:31:52",00:00:33,33,`ABP`.`UserAccount`,ABP,UserAccount,NULL,NULL,PRIMARY,RECORD,4666,"2021-01-20 07:31:52",00:00:33,1,0,26,"UPDATE UserAccount
+                         SET
+                         Balance =Balance-1,
+                         LastUpdateTime= NOW()
+                         WHERE UserId=1 and Balance-1>0
+                         limit 1",139990049666120:12:4:2:139989962808640,"X,REC_NOT_GAP",4662,24,NULL,139990049668688:12:4:2:139989962827056,"X,REC_NOT_GAP","2021-01-20 07:00:08",00:32:17,1,1,"KILL QUERY 24","KILL 24"

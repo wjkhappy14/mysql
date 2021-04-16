@@ -1,0 +1,1 @@
+CREATE INDEX `idx_TransactionItem_UserId_AccountNo`  ON `ABP`.`TransactionItem` (UserId, AccountNo) ;
