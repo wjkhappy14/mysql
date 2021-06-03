@@ -1,0 +1,171 @@
+
+wjkha@Angkor-DEV MINGW64 /e/mysql-8.0.23
+$ cmake
+Usage
+
+  cmake [options] <path-to-source>
+  cmake [options] <path-to-existing-build>
+  cmake [options] -S <path-to-source> -B <path-to-build>
+
+Specify a source directory to (re-)generate a build system for it in the
+current working directory.  Specify an existing build directory to
+re-generate its build system.
+
+Run 'cmake --help' for more information.
+
+
+wjkha@Angkor-DEV MINGW64 /e/mysql-8.0.23
+$ cmake .
+-- Running cmake version 3.19.3
+-- NT_RELEASE_VERSION is Version     10.0.19042
+-- Found Git: C:/Program Files/Git/mingw64/bin/git.exe (found version "2.30.0.wi
+ndows.1")
+-- MySQL 8.0.23
+-- Selecting Windows SDK version 10.0.18362.0 to target Windows 10.0.19042.
+-- Source directory E:/mysql-8.0.23
+-- Binary directory E:/mysql-8.0.23
+CMake Warning at CMakeLists.txt:397 (MESSAGE):
+  This is an in-source build
+
+
+-- CMAKE_GENERATOR: Visual Studio 16 2019
+-- MSVC_VERSION is 1928
+-- SIZEOF_VOIDP 8
+-- Packaging as: mysql-8.0.23-winx64
+-- Local boost dir D:/BOOST/boost_1_73_0
+-- Local boost zip D:/BOOST/boost_1_73_0.tar.gz
+-- Found D:/BOOST/boost_1_73_0/boost/version.hpp
+-- BOOST_VERSION_NUMBER is #define BOOST_VERSION 107300
+-- BOOST_INCLUDE_DIR D:/BOOST/boost_1_73_0
+-- NUMA library missing or required version not available
+CMake Deprecation Warning at extra/zlib/CMakeLists.txt:24 (cmake_minimum_require
+d):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- ZLIB_VERSION (bundled) is 1.2.11
+CMake Deprecation Warning at extra/zstd/CMakeLists.txt:11 (CMAKE_MINIMUM_REQUIRE
+D):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- ZSTD_LEGACY_SUPPORT not defined!
+-- ZSTD_VERSION (bundled) is 1.4.3
+-- OPENSSL_WIN32 C:/OpenSSL-Win32
+-- OPENSSL_WIN64 C:/Program Files/OpenSSL-Win64
+-- Found both 32bit and 64bit
+-- OPENSSL_ROOT_DIR C:/Program Files/OpenSSL-Win64
+-- system OpenSSL has root C:/Program Files/OpenSSL-Win64
+-- OPENSSL_APPLINK_C C:/Program Files/OpenSSL-Win64/include/openssl/applink.c
+-- The openssl command does support zlib
+-- OPENSSL_INCLUDE_DIR = C:/Program Files/OpenSSL-Win64/include
+-- OPENSSL_LIBRARY = C:/Program Files/OpenSSL-Win64/lib/libssl.lib
+-- CRYPTO_LIBRARY = C:/Program Files/OpenSSL-Win64/lib/libcrypto.lib
+-- OPENSSL_MAJOR_VERSION = 1
+-- OPENSSL_MINOR_VERSION = 01
+-- OPENSSL_FIX_VERSION = 01
+-- SSL_LIBRARIES = E:/mysql-8.0.23/copied_openssl.lib;E:/mysql-8.0.23/copied_cry
+pto.lib
+-- WITH_SSL_PATH C:/Program Files/OpenSSL-Win64
+-- HAVE_CRYPTO_DLL C:/Program Files/OpenSSL-Win64/bin/libcrypto-1_1-x64.dll
+-- HAVE_OPENSSL_DLL C:/Program Files/OpenSSL-Win64/bin/libssl-1_1-x64.dll
+-- INSTALL C:/Program Files/OpenSSL-Win64/bin/libcrypto-1_1-x64.dll to bin
+-- INSTALL C:/Program Files/OpenSSL-Win64/bin/libssl-1_1-x64.dll to bin
+-- KERBEROS path is none, disabling kerberos support.
+CMake Warning at cmake/sasl.cmake:264 (MESSAGE):
+  Could not find SASL
+Call Stack (most recent call first):
+  CMakeLists.txt:1372 (MYSQL_CHECK_SASL)
+
+
+-- LBER_LIBRARY
+-- LDAP_LIBRARY Wldap32
+-- Found Git: C:/Program Files/Git/mingw64/bin/git.exe
+-- LIBEVENT_VERSION_STRING 2.1.11-stable
+-- LIBEVENT_VERSION (bundled) 2.1.11
+-- ICU_MAJOR_VERSION = 65
+-- ICU_INCLUDE_DIRS E:/mysql-8.0.23/extra/icu/source/common;E:/mysql-8.0.23/extr
+a/icu/source/stubdata;E:/mysql-8.0.23/extra/icu/source/i18n
+-- ICU_LIBRARIES icui18n;icuuc;icustubdata
+-- WITH_PROTOBUF=bundled
+-- PROTOBUF_VERSION_NUMBER is #define GOOGLE_PROTOBUF_VERSION 3011004
+-- PROTOBUF_INCLUDE_DIR E:/mysql-8.0.23/extra/protobuf/protobuf-3.11.4/src
+-- PROTOBUF_LIBRARY libprotobuf
+-- PROTOBUF_LITE_LIBRARY libprotobuf-lite
+-- PROTOBUF_PROTOC_EXECUTABLE protoc
+-- WITH_CURL=none, not using any curl library.
+-- CURL_LIBRARY =
+-- CURL_INCLUDE_DIR =
+-- RAPIDJSON_INCLUDE_DIR E:/mysql-8.0.23/extra/rapidjson/include
+-- RAPIDJSON_MAJOR_VERSION is 1
+-- RAPIDJSON_MINOR_VERSION is 1
+-- INSTALL_DEBUG_TARGET E:/mysql-8.0.23/library_output_directory/Debug/libprotob
+uf-lite-debug.dll
+-- INSTALL_DEBUG_TARGET E:/mysql-8.0.23/library_output_directory/Debug/libprotob
+uf-debug.dll
+-- GMOCK_SOURCE_DIR:E:/mysql-8.0.23/source_downloads/googletest-release-1.10.0/g
+ooglemock
+-- Found Win32 DNS SRV APIs
+CMake Warning at libmysql/authentication_ldap/CMakeLists.txt:30 (MESSAGE):
+  Skipping the LDAP client authentication plugin
+
+
+-- Library mysqlclient depends on OSLIBS ws2_32;E:/mysql-8.0.23/copied_openssl.l
+ib;E:/mysql-8.0.23/copied_crypto.lib;crypt32;Secur32
+-- MERGE_CONVENIENCE_LIBRARIES TARGET mysqlclient
+-- MERGE_CONVENIENCE_LIBRARIES LIBS clientlib;mytime;strings;vio;mysys;zlib;zstd
+;auth_win_client
+-- MYSQLX - Text log of protobuf messages enabled
+-- GTEST_LIBRARIES:gmock;gtest
+-- Library json_binlog_static depends on OSLIBS ws2_32;E:/mysql-8.0.23/copied_op
+enssl.lib;E:/mysql-8.0.23/copied_crypto.lib;crypt32
+-- MERGE_CONVENIENCE_LIBRARIES TARGET json_binlog_static
+-- MERGE_CONVENIENCE_LIBRARIES LIBS json_client_library;mysys;mytime;strings
+-- Found BISON: D:/GnuWin32/bin/bison.exe (found version "2.4.1")
+-- CONFIG_CLIENT_LIBS ws2_32 E:/mysql-8.0.23/copied_openssl.lib E:/mysql-8.0.23/
+copied_crypto.lib crypt32 Secur32 dnsapi
+-- CONFIG_LIBS_PRIVATE ws2_32 E:/mysql-8.0.23/copied_openssl.lib E:/mysql-8.0.23
+/copied_crypto.lib crypt32 Secur32 dnsapi
+-- MySQL 8.0.23
+-- WIX_DIR WIX_DIR-NOTFOUND path C:\Program Files/WiX Toolset V3.11
+-- WIX_DIR WIX_DIR-NOTFOUND path C:\Program Files/WiX Toolset V3.11/bin
+-- WIX_DIR WIX_DIR-NOTFOUND path C:\Program Files (x86)/WiX Toolset V3.11
+-- WIX_DIR C:/Program Files (x86)/WiX Toolset v3.11/bin path C:\Program Files (x
+86)/WiX Toolset V3.11/bin
+-- WIX_DIR C:/Program Files (x86)/WiX Toolset v3.11/bin path C:\Program Files/Wi
+X Toolset V3.11
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE)
+-- COMPILE_DEFINITIONS: _WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;R
+APIDJSON_NO_SIZETYPEDEFINE;RAPIDJSON_SCHEMA_USE_INTERNALREGEX=0;RAPIDJSON_SCHEMA
+_USE_STDREGEX=1;HAVE_CONFIG_H;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;_USE_MATH
+_DEFINES;LZ4_DISABLE_DEPRECATE_WARNINGS;HAVE_TLSv13
+-- CMAKE_C_FLAGS: /DWIN32 /D_WINDOWS /W3 /MP /wd4996 /wd4267 /wd4244
+-- CMAKE_CXX_FLAGS: /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MP /wd4996 /wd4267 /wd4244
+ /permissive-
+-- CMAKE_CXX_FLAGS_DEBUG: -DSAFE_MUTEX -DENABLED_DEBUG_SYNC /MDd /Z7 /Ob1 /Od /R
+TC1 /EHsc /FC /std:c++14
+-- CMAKE_CXX_FLAGS_RELWITHDEBINFO: -DDBUG_OFF /MD /Z7 /O2 /Ob1 /DNDEBUG /EHsc /F
+C /std:c++14
+-- CMAKE_CXX_FLAGS_RELEASE: -DDBUG_OFF /MD /O2 /Ob2 /DNDEBUG /Z7 /EHsc /FC /std:
+c++14
+-- CMAKE_CXX_FLAGS_MINSIZEREL: -DDBUG_OFF /MD /O1 /Ob1 /DNDEBUG /EHsc /FC /std:c
+++14
+-- CMAKE_C_LINK_FLAGS:
+-- CMAKE_CXX_LINK_FLAGS:
+-- CMAKE_EXE_LINKER_FLAGS /machine:x64
+-- CMAKE_MODULE_LINKER_FLAGS /machine:x64
+-- CMAKE_SHARED_LINKER_FLAGS /machine:x64
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/mysql-8.0.23
+
+wjkha@Angkor-DEV MINGW64 /e/mysql-8.0.23
+$

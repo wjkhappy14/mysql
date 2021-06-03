@@ -1,0 +1,8 @@
+﻿    set BOOST_LIBRARY_DIR=E:\boost\boost_1_73_0\lib
+    set BOOST_INCLUDE_DIR=E:\boost\boost_1_73_0
+    set BOOST_ROOT=E:\boost\boost_1_73_0
+    set LOCAL_BOOST_DIR=E:\boost\boost_1_73_0
+    set PATH=%PATH%;%BOOST_ROOT%;%BOOST_LIBRARY_DIR%;%BOOST_INCLUDE_DIR%;%LOCAL_BOOST_DIR%
+
+
+
